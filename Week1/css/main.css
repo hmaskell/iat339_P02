@@ -73,6 +73,40 @@ article{
   width:10rem;
   padding: .5rem .5rem;
   display:block;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+#swatch-black{
+  background-color: #000000;
+}
+
+#swatch-black:hover{
+  background-color: #4C4C4C;
+}
+
+#swatch-white{
+  background-color: #FFFFFF;
+}
+
+#swatch-white:hover{
+  background-color: #E8E8E8;
+}
+
+#swatch-orange{
+  background-color: #F15F23;
+}
+
+#swatch-orange:hover{
+  background-color: #E58E7A;
+}
+
+#swatch-blue{
+  background-color: #008FD3;
+}
+
+#swatch-blue:hover{
+  background-color: #81BAD3;
 }
 
 .label{
