@@ -31,6 +31,7 @@ nav a:hover, nav a:focus {
 
 section{
   display: block;
+  padding-bottom: 1rem;
 }
 section code {
   background-color: #EEE;
@@ -98,7 +99,7 @@ article{
 }
 
 #swatch-orange:hover{
-  background-color: #E58E7A;
+  background-color: #EF7362;
 }
 
 #swatch-blue{
@@ -106,7 +107,7 @@ article{
 }
 
 #swatch-blue:hover{
-  background-color: #81BAD3;
+  background-color: #43ADE0;
 }
 
 .label{
