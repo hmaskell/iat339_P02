@@ -16,7 +16,7 @@ h1 {
 }
 
 h3 {
-  color: #008FD3;
+  color: #F15F23;
 }
 
 section h2{
@@ -34,7 +34,7 @@ section p {
 }
 
 #nav-containter{
-  background-color: #008FD3;
+  background-color: #F15F23;
 }
 
 nav {
@@ -207,7 +207,7 @@ article {
   font-size: 1rem;
   display: inline-block;
   padding: 0.25em 0.5em;
-  color: #008FD3;
+  color: #F15F23;
   background-color: #FFFFFF;
   border-radius: 0.25em;
   border-color: #000;
@@ -220,7 +220,7 @@ article {
 }
 
 section a {
-  color: #008FD3;
+  color: #F15F23;
   cursor: pointer;
   text-decoration: none;
 }
@@ -236,7 +236,7 @@ section a:hover, section a:focus {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  background-color: #008FD3;
+  background-color: #F15F23;
   border-radius: 0.25em;
   text-decoration: none;
 }
@@ -319,7 +319,7 @@ table, th, td {
 }
  
 th {
-  background-color: #008FD3;
+  background-color: #F15F23;
   color:#FFF;
 }
 
@@ -329,7 +329,7 @@ section#form .button-sub {
   display: block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  background-color: #008FD3;
+  background-color: #F15F23;
   border-radius: 0.25em;
   text-decoration: none;
   margin-left: 1rem;
