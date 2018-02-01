@@ -47,7 +47,7 @@ nav {
 
 nav a:focus, nav a:visited, nav a:link, nav a:active{
   text-decoration: none;
-  padding: .5rem;
+  padding: .5rem .7rem;
   color: #FFFFFF;
 }
 
@@ -93,6 +93,40 @@ article {
 @media(max-width: 35rem){
   .colours{
     margin-bottom: 65rem;
+  }
+}
+
+@media(max-width: 560px){
+  .colours{
+    width: 100%;
+  }
+
+  section{
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+@media(max-width: 739px){
+  nav {
+    display: block;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav a{
+    display: block;
+    width:100%;
+  }
+
+  code{
+      line-height: 2.5rem;
+  }
+
+  html{
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
