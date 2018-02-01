@@ -58,6 +58,7 @@ nav a:hover{
 section {
   display: block;
   padding: 1rem 3rem;
+  border-bottom: #000 solid .25rem;
 }
 
 section code {
@@ -72,7 +73,6 @@ section a {
 
 article {
   padding-bottom: 1.5rem;
-  border-bottom: #000 solid .25rem;
 }
 
 
@@ -258,14 +258,13 @@ li {
 }
 
 img {
-  max-width:25%;
+  max-width:100%;
   height:auto;
   vertical-align: middle;
 }
 
-#sitemap{
-  max-width: 100%;
-  width: 100%;
+.logo img{
+  max-width:25%;
 }
 
 /*Not Fully Responsive yet ):*/
@@ -291,6 +290,7 @@ th {
 }
 
 section#form .button-sub {
+  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   display: block;
   padding: 0.5em 0.75em;
