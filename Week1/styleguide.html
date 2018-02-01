@@ -17,39 +17,24 @@
 
   <body>
 
-    <h1>P02 - Style Guide for RDL Dodgeball</h1>
+    <div id="header">
+      <h1>P02 - Style Guide for RDL Dodgeball</h1>
+      <p>Style Guide for RDL Dodgeball.</p>
+    </div>
 
-    <p>Style Guide for RDL Dodgeball.</p>
-    <nav>
-
-      <p>
-        On this page:
-      </p>
-      <ul>
-        <li>
+    <div class="flex-container" id="nav-containter">
+      <nav>
           <a href="#colours">Colour Palette</a>
-        </li>
-        <li>
           <a href="#fonts">Fonts</a>
-        </li>
-        <li>
           <a href="#interactive_elements">Interactive Elements</a>
-        </li>
-        <li>
           <a href="#text_elements">Text Elements</a>
-        </li>
-        <li>
           <a href="#combined_elements">Combined Elements</a>
-        </li>
-        <li>
           <a href="#site_map">Site Map</a>
-        </li>
-      </ul>
-
-    </nav>
+      </nav>
+    </div>
 
       <!-- COLOUR PALETTE // -->
-    <section id="colours">
+    <section class="main-section" id="colours">
         <h2>Colour Palette</h2>
         <ul class="colours">
           <li>
@@ -72,7 +57,7 @@
     </section>
 
     <!--FONTS SECTION-->
-    <section id="fonts">
+    <section class="main-section" id="fonts">
       <h2>Fonts</h2>
         <h4>Headings and Title text:</h4>
           <p>$font: Quicksand, sans-serif;</p>
@@ -81,13 +66,10 @@
           <p>$font: Roboto, sans-serif;</p>
     </section>
 
-
-    <!--ATOMS-->
-    <section id="atoms">
       <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <h1>Atoms</h1>
-      <section id="interactive_elements">
+      <section class="main-section" id="interactive_elements">
         <h2>Interactive Elements</h2>
+        <section class="sub-section" id="navigation">
           <h3>Navigation Button</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -99,10 +81,9 @@
             <h4>Rendered element:</h4>
             <a class="button-nav" href="#">DEFAULT BUTTON</a>
           </article>
-
         </section>
 
-        <section id="intxt-link">
+        <section class="sub-section" id="intxt-link">
           <h3>In-text link</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -116,7 +97,7 @@
           </article>
         </section>
 
-        <section id="submit-button">
+        <section class="sub-section" id="submit-button">
           <h3>Submit Button</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -130,7 +111,7 @@
           </article>
         </section>
 
-        <section id="txt-in-field">
+        <section class="sub-section" id="txt-in-field">
           <h3>Text Input Field</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -148,9 +129,9 @@
       <!-- // INTERACTIVE ELEMENTS SECTION -->
 
       <!-- TEXT ELEMENTS SECTION // -->
-      <section id="text_elements">
+      <section class="main-section" id="text_elements">
         <h2>Text Elements</h2>
-        <section id="headings">
+        <section class="sub-section" id="headings">
           <h3>Headings</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -171,7 +152,7 @@
           </article>
         </section>
 
-        <section id="paragraphs">
+        <section class="sub-section" id="paragraphs">
           <h3>Paragraphs</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -187,7 +168,7 @@
           </article>
         </section>
 
-        <section id="bullet-list">
+        <section class="sub-section" id="bullet-list">
           <h3>Bulleted Lists</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -211,7 +192,7 @@
           </article>
         </section>
 
-        <section id="number-list">
+        <section class="sub-section" id="number-list">
           <h3>Numbered Lists</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -241,11 +222,9 @@
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="molecules">
-      <h2>Molecules</h2>
-      <section id="combined_elements">
+      <section class="main-section" id="combined_elements">
         <h2>Combined Elements</h2>
-        <section id="block-text">
+        <section class="sub-section" id="block-text">
           <h3>Text Block</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -264,7 +243,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
           </article>
         </section>
-        <section id="video">
+        <section class="sub-section" id="video">
           <h3>Embedded Video</h3>
           <article>
             <h4>CSS selector:</h4>
@@ -282,7 +261,7 @@
           </article>
         </section>
 
-        <section id="schedule">
+        <section class="sub-section" id="schedule">
           <h3>Schedule Template </h3>
             <p>Similar to product/service listing</p>
             <article>
@@ -329,12 +308,8 @@
               </table>
             </article>
         </section>
-      </section>
-    </section> <!--END MOLECULES-->
 
-    <section id="organisms">
-      <h1>Organisms</h1>
-      <section id="navbar">
+      <section class="sub-section" id="navbar">
         <h3>Main Navigation</h3>
         <article>
           <h4>CSS selector:</h4>
@@ -354,7 +329,7 @@
           </pre>
           <h4>Rendered element:</h4>
 
-          <nav>
+          <ul>
             <span class="logo">
               <img src="img/logo.jpg" alt="RDL logo">
             </span>
@@ -363,11 +338,11 @@
             <a href="#" class="button-nav">Season 8</a>
             <a href="#" class="button-nav">League</a>
             <a href="#" class="button-nav">About</a>
-          </nav>
+          </ul>
         </article>
       </section>
 
-      <section id="form">
+      <section class="sub-section" id="form">
         <h3>Form</h3>
         <article>
           <h4>CSS selector:</h4>
@@ -395,8 +370,9 @@
           <input type='submit' class='button-sub' value='Send Message'>
         </article>
       </section>
+    </section>
 
-      <section id="grid">
+      <section class="main-section" id="grid">
         <h3>Website Grid</h3>
         <article>
           <h4>CSS selector:</h4>
@@ -428,11 +404,9 @@
         </article>
       </section>
 
-
-    </section> <!--END ORGANISMS-->
-
-    <section id="site_map">
-      <img src="img/sitemap.png" alt="Image of Site Map">
+    <section class="main-section" id="site_map">
+      <h2>Site Map</h2>
+      <img id="sitemap" src="sitemap.png" alt="Image of Site Map">
     </section>
 
   </body>

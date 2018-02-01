@@ -6,11 +6,16 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
-  padding: 3rem;
-  margin-left: 2rem;
 }
 
-h3{
+#header{
+  padding: 2rem 3rem;
+}
+
+h1 {
+}
+
+h3 {
   color: #008FD3;
 }
 
@@ -23,29 +28,51 @@ section p {
   margin-left: 1rem;
 }
 
-nav{
-}
-nav a:hover, nav a:focus {
-  text-decoration: none;
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-section{
-  display: block;
-  padding-bottom: 1rem;
+#nav-containter{
+  background-color: #008FD3;
 }
+
+nav {
+  text-decoration: none;
+  padding: .5rem;
+  color: #FFFFFF;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+
+nav a:focus, nav a:visited, nav a:link, nav a:active{
+  text-decoration: none;
+  padding: .5rem;
+  color: #FFFFFF;
+}
+
+nav a:hover{
+  color: #E8E8E8;
+}
+
+section {
+  display: block;
+  padding: 1rem 3rem;
+  border-bottom: #000 solid .25rem;
+}
+
 section code {
   background-color: #EEE;
   padding: 0.5em 0.75em;
   margin: 1rem;
 }
-section a{
+section a {
   margin-left: 1rem;
   font-size: 1.25rem;
 }
 
-article{
+article {
   padding-bottom: 1.5rem;
-  border-bottom: #000 solid .25rem;
 }
 
 
@@ -53,14 +80,14 @@ article{
 /*
   COLOUR PALETTE ELEMENTS -------------------
 */
-.colours{
+.colours {
   margin-bottom: 35rem;
 }
+
 @media(min-width: 65.5rem){
-  .colours{
+  .colours {
     margin-bottom: 19rem;
   }
-
 }
 
 @media(max-width: 35rem){
@@ -69,7 +96,7 @@ article{
   }
 }
 
-.swatch{
+.swatch {
   height:10rem;
   width:10rem;
   padding: .5rem .5rem;
@@ -78,46 +105,46 @@ article{
   transition: background-color 0.5s;
 }
 
-#swatch-black{
+#swatch-black {
   background-color: #000000;
 }
 
-#swatch-black:hover{
+#swatch-black:hover {
   background-color: #4C4C4C;
 }
 
-#swatch-white{
+#swatch-white {
   background-color: #FFFFFF;
 }
 
-#swatch-white:hover{
+#swatch-white:hover {
   background-color: #E8E8E8;
 }
 
-#swatch-orange{
+#swatch-orange {
   background-color: #F15F23;
 }
 
-#swatch-orange:hover{
+#swatch-orange:hover {
   background-color: #EF7362;
 }
 
-#swatch-blue{
+#swatch-blue {
   background-color: #008FD3;
 }
 
-#swatch-blue:hover{
+#swatch-blue:hover {
   background-color: #43ADE0;
 }
 
-.label{
+.label {
   font-family: 'Quicksand-Medium', sans-serif;
   text-align: center;
   display: block;
   margin-top: .3rem;
 }
 
-.colours li{
+.colours li {
   list-style: none;
   float:left;
   margin: 1rem;
@@ -127,10 +154,12 @@ article{
   border-radius: .5rem;
   display: block;
 }
+
 /*
   FONT ELEMENTS -------------------
 */
-.fonts{
+
+.fonts {
   margin-left: 1rem;
 }
 
@@ -156,13 +185,13 @@ article{
   text-decoration: underline;
 }
 
-section a{
+section a {
   color: #008FD3;
   cursor: pointer;
   text-decoration: none;
 }
 
-section a:hover, section a:focus{
+section a:hover, section a:focus {
   color: #F15F23;
   text-decoration: underline;
 }
@@ -185,7 +214,7 @@ section a:hover, section a:focus{
   text-decoration: none;
 }
 
-input[type="text"]{
+input[type="text"] {
   border: .15rem solid #333;
   border-radius: .25rem;
   font: inherit;
@@ -205,7 +234,7 @@ section pre code {
   line-height: 1.5rem;
 }
 
-li{
+li {
   padding-bottom: .5rem;
 }
 
@@ -219,6 +248,7 @@ li{
 	padding-top: 25px;
 	height: 0;
 }
+
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
@@ -227,34 +257,40 @@ li{
 	height: 100%;
 }
 
-img{
-  max-width:25%;
+img {
+  max-width:100%;
   height:auto;
   vertical-align: middle;
 }
 
+.logo img{
+  max-width:25%;
+}
+
 /*Not Fully Responsive yet ):*/
-section#navbar .button-nav{
+section#navbar .button-nav {
   font-size: 1rem;
 }
 
-.active{
+.active {
   color:#F15F23;
   text-decoration: none;
 }
 
-table, th, td{
+table, th, td {
   border: .1rem solid #000000;
   border-collapse: collapse;
   text-align: center;
   padding: .5rem;
 }
-th{
+ 
+th {
   background-color: #008FD3;
   color:#FFF;
 }
 
-section#form .button-sub{
+section#form .button-sub {
+  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   display: block;
   padding: 0.5em 0.75em;
@@ -272,10 +308,11 @@ section#form .button-sub:hover, .button-sub:focus {
   text-decoration: none;
 }
 
-section#form input{
+section#form input {
   margin-bottom: 2rem;
 }
-section#form textarea{
+
+section#form textarea {
   border: .15rem solid #333;
   border-radius: .25rem;
   font: inherit;
@@ -285,7 +322,7 @@ section#form textarea{
   margin-bottom: 2rem;
 }
 
-section#userflow img{
+section#userflow img {
   max-width: 100%;
   height: auto;
 }
