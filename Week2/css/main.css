@@ -118,6 +118,24 @@ a:active, a:hover, a:focus {
   transition: color 0.5s ease-out;
 }
 
+#quick-contact-link {
+  display: inline-block;
+  background-color: #008FD3;
+  color: white;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0.125rem;
+  transition: background-color 0.5s ease-out;
+}
+
+#quick-contact-link:active, #quick-contact-link:hover, #quick-contact-link:focus {
+  background-color: #43ADE0;
+  transition: background-color 0.5s ease-out;
+}
+
 
 /* FORMS */
 
