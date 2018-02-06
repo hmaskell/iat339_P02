@@ -1,13 +1,13 @@
 /*
-  IAT 339 with Prof. Andrew Hawryshkewich
-  D101 with Elgin-Skye McLaren
-  P02: Company
+IAT 339 with Prof. Andrew Hawryshkewich
+D101 with Elgin-Skye McLaren
+P02: Company
 
-  Josh Fernandez
-  Priscilla Skylar Lee
-  Heather Maskell
+Josh Fernandez
+Priscilla Skylar Lee
+Heather Maskell
 
-  main.css
+main.css
 */
 
 
@@ -16,8 +16,8 @@
 
 
 /*************
- * BASE RULES
- *************/
+* BASE RULES
+*************/
 
 /* GENERAL */
 
@@ -30,7 +30,7 @@ body {
 }
 
 section {
- margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 
@@ -83,81 +83,81 @@ ol li, ul li {
 
 
 /*************
- * MODULES
- *************/
+* MODULES
+*************/
 
 
- /* FIGURES AND IMAGES */
+/* FIGURES AND IMAGES */
 
- img {
-   height: auto;
-   max-width: 100%;
- }
+img {
+  height: auto;
+  max-width: 100%;
+}
 
- figure {
-   margin: 0;
- }
+figure {
+  margin: 0;
+}
 
- figcaption {
-   font-style: italic;
-   margin: 0;
- }
-
-
- /* LINKS */
-
- a {
-   font-weight: bold;
-   color: #F15F23;
-   transition: color 0.5s ease-out;
- }
-
- a:active, a:hover, a:focus {
-   color: #EF7362;
-   text-decoration: none;
-   transition: color 0.5s ease-out;
- }
+figcaption {
+  font-style: italic;
+  margin: 0;
+}
 
 
- /* FORMS */
+/* LINKS */
 
- form {
-   margin: 0.5rem 0;
- }
+a {
+  font-weight: bold;
+  color: #F15F23;
+  transition: color 0.5s ease-out;
+}
 
- input {
-   color: white;
-   background-color: #008FD3;
-
-   font-family: 'Quicksand', Helvetica, sans-serif;
-   font-size: 1rem;
-
-   border: none;
-   padding: 0.4rem 0.5rem;
-
-   background-repeat: no-repeat;
-   display: inline-block;
-
-   transition: background-color 0.5s ease-out;
- }
-
- input[type=text] {
-   background-color: white;
-   border: 1px solid #43ADE0;
-   width: 15rem;
- }
-
- input:active, input:hover, input:focus {
-   background-color: #43ADE0;
-   transition: background-color 0.5s ease-out;
- }
-
- ::placeholder {
-   color: #212121;
- }
+a:active, a:hover, a:focus {
+  color: #EF7362;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
 
 
- /* NAVIGATION */
+/* FORMS */
+
+form {
+  margin: 0.5rem 0;
+}
+
+input {
+  color: white;
+  background-color: #008FD3;
+
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
+
+  border: none;
+  padding: 0.4rem 0.5rem;
+
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  transition: background-color 0.5s ease-out;
+}
+
+input[type=text] {
+  background-color: white;
+  border: 1px solid #43ADE0;
+  width: 15rem;
+}
+
+input:active, input:hover, input:focus {
+  background-color: #43ADE0;
+  transition: background-color 0.5s ease-out;
+}
+
+::placeholder {
+  color: #212121;
+}
+
+
+/* NAVIGATION */
 
 .nav-item {
   display: inline-block;
