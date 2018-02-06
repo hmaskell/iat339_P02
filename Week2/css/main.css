@@ -9,3 +9,138 @@
 
   main.css
 */
+
+
+
+
+
+
+/*************
+ * BASE RULES
+ *************/
+
+/* GENERAL */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+section {
+ margin: 2rem 0;
+}
+
+
+/* HEADERS */
+
+h1, h2, h3, h4 {
+  font-family: 'Quicksand', Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+
+/* TEXT */
+
+p, ol, ul {
+  max-width: 40rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+ol li, ul li {
+  margin: 0.25rem 0;
+}
+
+
+
+
+
+/*************
+ * MODULES
+ *************/
+
+
+ /* FIGURES AND IMAGES */
+
+ img {
+   height: auto;
+   max-width: 100%;
+ }
+
+ figure {
+   margin: 0;
+ }
+
+ figcaption {
+   font-style: italic;
+   margin: 0;
+ }
+
+
+ /* LINKS */
+
+ a {
+   font-weight: bold;
+   color: #F15F23;
+   transition: color 0.5s ease-out;
+ }
+
+ a:active, a:hover, a:focus {
+   color: #EF7362;
+   text-decoration: none;
+   transition: color 0.5s ease-out;
+ }
+
+
+ /* FORMS */
+
+ form {
+   margin: 0.5rem 0;
+ }
+
+
+ /* NAVIGATION */
+
+.nav-item {
+  display: inline-block;
+  background-color: #F15F23;
+  color: white;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0.125rem;
+  transition: background-color 0.5s ease-out;
+}
+
+.nav-item:active, .nav-item:hover, .nav-item:focus {
+  background-color: #EF7362;
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
