@@ -125,6 +125,37 @@ ol li, ul li {
    margin: 0.5rem 0;
  }
 
+ input {
+   color: white;
+   background-color: #008FD3;
+
+   font-family: 'Quicksand', Helvetica, sans-serif;
+   font-size: 1rem;
+
+   border: none;
+   padding: 0.4rem 0.5rem;
+
+   background-repeat: no-repeat;
+   display: inline-block;
+
+   transition: background-color 0.5s ease-out;
+ }
+
+ input[type=text] {
+   background-color: white;
+   border: 1px solid #43ADE0;
+   width: 15rem;
+ }
+
+ input:active, input:hover, input:focus {
+   background-color: #43ADE0;
+   transition: background-color 0.5s ease-out;
+ }
+
+ ::placeholder {
+   color: #212121;
+ }
+
 
  /* NAVIGATION */
 
