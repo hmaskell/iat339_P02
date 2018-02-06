@@ -1,13 +1,16 @@
 /*
-IAT 339 with Prof. Andrew Hawryshkewich
-D101 with Elgin-Skye McLaren
-P02: Company
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
 
-Josh Fernandez
-Priscilla Skylar Lee
-Heather Maskell
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
 
-main.css
+  main.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
 */
 
 
@@ -138,6 +141,9 @@ a:active, a:hover, a:focus {
 
 
 /* FORMS */
+/*
+  Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
+*/
 
 form {
   margin: 0.5rem 0;
@@ -162,7 +168,7 @@ input {
 input[type=text] {
   background-color: white;
   border: 1px solid #43ADE0;
-  width: 15rem;
+  width: 10rem;
 }
 
 input:active, input:hover, input:focus {
@@ -194,6 +200,7 @@ input:active, input:hover, input:focus {
   color: white;
   transition: background-color 0.5s ease-out;
 }
+
 
 /* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
 

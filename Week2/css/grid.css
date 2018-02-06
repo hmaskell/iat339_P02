@@ -8,6 +8,9 @@
   Heather Maskell
 
   grid.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
 */
 
 
@@ -149,7 +152,9 @@ section {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 130rem) {
+/* TO DO: Media Queries for the Divisions of 8 */
+
+@media (max-width: 140rem) {
 
   [class^="grid-col-navitem"] {
     flex-basis: 33.33%;
@@ -183,15 +188,19 @@ section {
 
 }
 
-@media (max-width: 60rem) {
-
-  #quick-contact h2, #quick-contact p, #quick-contact a {
-    text-align: left;
-  }
+@media (max-width: 64rem) {
 
   [class^="grid-col-header-title"], [class^="grid-col-header-navbar"],
   [class^="grid-col-navitem"] {
     flex-basis: 100%;
+  }
+
+}
+
+@media (max-width: 50rem) {
+
+  #quick-contact h2, #quick-contact p, #quick-contact a {
+    text-align: left;
   }
 
   [class^="grid-col-"] {
