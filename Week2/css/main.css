@@ -194,3 +194,15 @@ input:active, input:hover, input:focus {
   color: white;
   transition: background-color 0.5s ease-out;
 }
+
+/* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
+
+.event-list .event-container p {
+  padding: 0.5rem;
+  margin: 0 0 0.25rem 0;
+  color: white;
+}
+
+.event-list .event-container {
+  background-color: #008FD3;
+}
