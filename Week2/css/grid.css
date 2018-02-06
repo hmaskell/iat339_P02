@@ -185,6 +185,10 @@ section {
 
 @media (max-width: 60rem) {
 
+  #quick-contact h2, #quick-contact p, #quick-contact a {
+    text-align: left;
+  }
+
   [class^="grid-col-header-title"], [class^="grid-col-header-navbar"],
   [class^="grid-col-navitem"] {
     flex-basis: 100%;
