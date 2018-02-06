@@ -37,6 +37,17 @@ h1 {
   margin: 0 0 0.5rem 0;
 }
 
+h2 {
+  display: inline-block;
+  background-color: #212121;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  margin: 0.5rem 0;
+
+  text-align: left;
+  width: 100%;
+}
+
 nav a {
   text-align: center;
 	width: 100%;
@@ -44,6 +55,14 @@ nav a {
 
 section {
   margin: 1rem 0;
+}
+
+#quick-contact h2, #quick-contact p, #quick-contact a {
+  text-align: center;
+}
+
+#quick-contact p {
+  max-width: none;
 }
 
 
