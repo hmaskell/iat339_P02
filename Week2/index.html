@@ -8,6 +8,9 @@
   Heather Maskell
 
   index.html
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
 -->
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css">
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
 
@@ -33,106 +37,175 @@
 
     <!-- HEADER AND NAVIGATION SECTION -->
 
-    <section id="header">
+    <section id="header" class="grid-row">
 
-      <h1>Richmond Dodgeball League</h1>
+      <h1 class="grid-col-header-title">
+        Richmond Dodgeball League
+      </h1>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="registration.html">Registration</a>
-        <a href="team.html">Season 8 Team Schedule</a>
-        <a href="league.html">League</a>
-        <a href="about.html">About</a>
+      <nav class="grid-col-header-navbar grid-row">
 
-        <!-- From Andrew's Week 1 index.html -->
-        <form method="post" action="#">
-  				<label for="form-search">Search:</label>
-  				<input type="text" id="form-search" placeholder="Search in the RDL Website">
-  				<input type="submit" value="Search">
-  			</form>
+        <div class="grid-col-navitem">
+          <a href="index.html" class="nav-item">
+            Home
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="registration.html" class="nav-item">
+            Registration
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="team.html" class="nav-item">
+            Season 8 Team Schedule
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="league.html" class="nav-item">
+            League
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="about.html" class="nav-item">
+            About
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+
+          <!-- From Andrew's Week 1 index.html -->
+          <form method="post" action="#">
+            <label for="form-search">Search:</label>
+            <input type="text" id="form-search" placeholder="RDL Website">
+            <input type="submit" value="Search">
+          </form>
+
+        </div>
+
       </nav>
 
     </section>
 
-    <!-- CURRENT CONTENT -->
+    <!-- FIRST BODY DIVISION -->
 
-    <section id="current-content">
+    <div class="grid-row">
 
-      <h2>Current News and Updates</h2>
+      <!-- CURRENT CONTENT -->
 
-      <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
-      <figure>
-        <img src="img/main_image.jpg" alt="A team of enthusiastic dodgeball players">
-        <figcaption>A Team of Enthusiastic Dodgeball Players</figcaption>
-        <p>Season 8 has begun! Thanks to all of the players that will be with us for Season 8. We will be running a short, fun season after Season Eight ends in the spring. Keep your eyes on this space and our social media for more information closer to that time or email us at <a href="mailto:info@rdldodgeball.ca">info&#64;rdldodgeball.ca</a>.</p>
-      </figure>
+      <section id="current-content" class="grid-col-5of8">
+        
+        <h2>Current News and Updates</h2>
 
-    </section>
+        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
+        <figure>
+          <img src="img/main_image.jpg" alt="A team of enthusiastic dodgeball players">
+          <figcaption>
+            A Team of Enthusiastic Dodgeball Players
+          </figcaption>
+          <p>
+            Season 8 has begun! Thanks to all of the players that will be with us for Season 8. We will be running a short, fun season after Season Eight ends in the spring. Keep your eyes on this space and our social media for more information closer to that time or email us at <a href="mailto:info@rdldodgeball.ca">info&#64;rdldodgeball.ca</a>.
+          </p>
+
+        </figure>
+
+      </section>
 
 
-    <!-- EVENTS AND SCHEDULING -->
+      <!-- EVENTS AND SCHEDULING -->
 
-    <section id="events-and-scheduling">
+      <section id="events-and-scheduling" class="grid-col-3of8">
 
-      <h2>Events and Scheduling</h2>
+        <h2>Events and Scheduling</h2>
 
-      <!-- TO DO: Make it an unordered list or have every item as a section -->
-      <ul id="list-of-events">
-        <li>
-          Photo Week on Week 3 - Monday, February 5th at your gym
-        </li>
-        <li>
-          5-on-5 Dodgeball Tournament on Friday, February 9th at Blundell Elementary School
-        </li>
-        <li>
-          Appreciation Banquet - Saturday, March 24th at Tin Tin Seafood Harbour
-        </li>
-      </ul>
+        <!-- TO DO: Make it an unordered list or have every item as a section -->
+        <div class="event-list">
 
-    </section>
+          <div class="event-container">
+            <p>
+              Photo Week on Week 3 - Monday, February 5th at your gym
+            </p>
+          </div>
 
-    <!-- QUICK CONTACT LINK -->
+          <div class="event-container">
+            <p>
+              5-on-5 Dodgeball Tournament on Friday, February 9th at Blundell Elementary School
+            </p>
+          </div>
 
-    <section id="quick-contact">
+          <div class="event-container">
+            <p>
+              Appreciation Banquet - Saturday, March 24th at Tin Tin Seafood Harbour
+            </p>
+          </div>
 
-      <h2>Quick Contact Link</h2>
+        </div>
 
-      <p>Have questions? Email us!</p>
+      </section>
 
-      <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
-      <!-- PSL: I think it's probably a button item imo.-->
-      <a href="mailto:info@rdldodgeball.ca">
-        EMAIL
-      </a>
+    </div>
 
-    </section>
+    <!-- SECOND BODY DIVISION -->
 
-    <!-- SOCIAL MEDIA INFO AND LINKS -->
+    <div class="grid-row">
 
-    <section id="social-media">
+      <!-- QUICK CONTACT LINK -->
 
-      <h2>Social Media Platforms</h2>
+      <section id="quick-contact" class="grid-col-8of8">
 
-      <!-- TO DO: How should this look like? -->
-      <!-- PSL: I think it should be the little icons
-      <a href="https://www.facebook.com/RDLDodgeball" target="_blank">Like us on Facebook</a>
-      <a href="https://twitter.com/rdldodgeball/" target="_blank">Follow us on Twitter</a>
+        <h2>Quick Contact Link</h2>
 
-    </section>
+        <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
+        <p>
+          Have questions?
+          <a href="mailto:info@rdldodgeball.ca" id="quick-contact-link">
+            Shoot us an email!
+          </a>
+        </p>
 
-    <!-- COPYRIGHT INFORMATION -->
+      </section>
 
-    <section id="copyright">
+    </div>
 
-      <h2>Copyright Information</h2>
+    <!-- THIRD BODY DIVISION -->
 
-      <p>
-        Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
-      </p>
+    <div class="grid-row">
 
-    </section>
+      <!-- SOCIAL MEDIA INFO AND LINKS -->
 
+      <section id="social-media" class="grid-col-5of8">
+
+        <h2>Social Media Platforms</h2>
+
+        <!-- TO DO: How should this look like? -->
+        <a href="https://www.facebook.com/RDLDodgeball" target="_blank">
+          Like us on Facebook
+        </a>
+
+        <a href="https://twitter.com/rdldodgeball/" target="_blank">
+          Follow us on Twitter
+        </a>
+
+      </section>
+
+      <!-- COPYRIGHT INFORMATION -->
+
+      <section id="copyright" class="grid-col-3of8">
+
+        <h2>Copyright Information</h2>
+
+        <p>
+          Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+        </p>
+
+      </section>
+
+    </div>
 
 
   </body>
+
 </html>
