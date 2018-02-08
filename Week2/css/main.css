@@ -235,7 +235,7 @@ input:active, input:hover, input:focus {
 
 /* GOOGLE MAPS */
 
-#map{
+.map{
   width: 100%;
   height: 100%;
 }
