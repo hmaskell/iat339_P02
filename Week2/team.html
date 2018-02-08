@@ -39,9 +39,11 @@
 
     <section id="header" class="grid-row">
 
-      <h1 class="grid-col-header-title">
-        Richmond Dodgeball League
-      </h1>
+      <div class="grid-col-header-title">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Richmond Dodgeball League Logo">
+        </a>
+      </div>
 
       <nav class="grid-col-header-navbar grid-row">
 
@@ -94,19 +96,85 @@
 
     <div class="grid-row">
 
-      <!-- CURRENT CONTENT -->
+      <!-- SEASON 8 TEAM SCHEDULE -->
 
-      <section id="current-content" class="grid-col-5of8">
+      <section id="schedule-content" class="grid-col-5of8">
 
         <h2>Season 8 Team Schedule</h2>
 
-        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
-        <figure>
-          <img src="img/main_image.jpg" alt="A team of enthusiastic dodgeball players">
-          <figcaption>
-            A Team of Enthusiastic Dodgeball Players
-          </figcaption>
-        </figure>
+        <h3>Blundell Elementary School - Date</h3>
+        <!-- FIRST SCHEDULE ROW -->
+
+        <section id="blundell_map" class="grid-col-8of8 map">
+          <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
+        </section>
+
+        <section class="grid-col-8of8">
+          <table>
+              <tr>
+                <th>Home Team</th>
+                <th>Away Team</th> 
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>Team Name</td> 
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>Team Name</td> 
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>Team Name</td> 
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>Team Name</td> 
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>Team Name</td> 
+              </tr>
+
+          </table>
+         </section>
+
+        <h3>Grauer Elementary School - Date</h3>
+        <!-- SECOND SCHEDULE ROW -->
+
+            <section id="grauer_map" class="grid-col-8of8 map">
+              <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
+            </section>
+
+            <section class="grid-col-8of8">
+              <table>
+                  <tr>
+                    <th>Home Team</th>
+                    <th>Away Team</th> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+
+              </table>
+             </section>
 
       </section>
 
@@ -201,7 +269,34 @@
 
     </div>
 
+    <script>
+      function initMap() {
+        var blundell_elem = {lat: 49.155, lng: -123.151};
+        var grauer_elem = {lat: 49.155, lng: -123.174};
+        var blundell_map = new google.maps.Map(document.getElementById('blundell_map'), {
+          zoom: 12,
+          center: blundell_elem
+        });
+        var marker = new google.maps.Marker({
+          position: blundell_elem,
+          map: blundell_map
+        });
+
+        var grauer_map = new google.maps.Map(document.getElementById('grauer_map'), {
+          zoom: 12,
+          center: grauer_elem
+        });
+        var marker = new google.maps.Marker({
+          position: grauer_elem,
+          map: grauer_map
+        });
+      }
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcqNU5NhVMz1wLirvRiuZeReo_9D8nSg&callback=initMap">
+    </script>
 
   </body>
-
 </html>
