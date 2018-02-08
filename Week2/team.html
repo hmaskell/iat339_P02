@@ -94,19 +94,67 @@
 
     <div class="grid-row">
 
-      <!-- CURRENT CONTENT -->
+      <!-- SEASON 8 TEAM SCHEDULE -->
 
-      <section id="current-content" class="grid-col-5of8">
+      <section id="schedule-content" class="grid-col-5of8">
 
         <h2>Season 8 Team Schedule</h2>
 
-        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
-        <figure>
-          <img src="img/main_image.jpg" alt="A team of enthusiastic dodgeball players">
-          <figcaption>
-            A Team of Enthusiastic Dodgeball Players
-          </figcaption>
-        </figure>
+        <h3>Blundell Elementary School - Date</h3>
+        <!-- FIRST SCHEDULE ROW -->
+        <div class="grid-row">
+
+            <section class="grid-col-3of8">
+              <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
+                  <div id="map"></div>
+                  <script>
+                    function initMap() {
+                      var blundell_elem = {lat: 49.155, lng: -123.151};
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 12,
+                        center: blundell_elem
+                      });
+                      var marker = new google.maps.Marker({
+                        position: blundell_elem,
+                        map: map
+                      });
+                    }
+                  </script>
+                  <script async defer
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcqNU5NhVMz1wLirvRiuZeReo_9D8nSg&callback=initMap">
+                  </script>
+            </section>
+
+            <section class="grid-col-5of8">
+              <table>
+                  <tr>
+                    <th>Home Team</th>
+                    <th>Away Team</th> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+                  <tr>
+                    <td>Team Name</td>
+                    <td>Team Name</td> 
+                  </tr>
+
+              </table>
+             </section>
+        </div>
 
       </section>
 
