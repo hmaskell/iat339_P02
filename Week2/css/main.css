@@ -176,7 +176,6 @@ input {
   font-size: 1rem;
 
   border: none;
-  border-radius: 7px;
   padding: 0.4rem 0.5rem;
 
   background-repeat: no-repeat;
@@ -189,6 +188,10 @@ input[type=text] {
   background-color: white;
   border: 1px solid #43ADE0;
   width: 10rem;
+}
+
+input[value=Search]{
+  border-radius: 7px;
 }
 
 input:active, input:hover, input:focus {
@@ -239,4 +242,11 @@ input:active, input:hover, input:focus {
 .map{
   width: 100%;
   height: 15rem;
+}
+
+/* VIDEO */
+
+iframe {
+  width: 100%;
+  height: 23rem;
 }
