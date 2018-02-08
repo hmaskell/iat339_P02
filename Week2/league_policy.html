@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RDL - SEASON 8 TEAM SCHEDULING</title>
+    <title>RDL - LEAGUE POLICY</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -96,91 +96,22 @@
 
     <div class="grid-row">
 
-      <!-- SEASON 8 TEAM SCHEDULE -->
+      <!-- CURRENT CONTENT -->
 
-      <section id="schedule-content" class="grid-col-5of8">
+      <section id="current-content" class="grid-col-5of8">
 
-        <h2>Season 8 Team Schedule</h2>
+        <h2>League Policy</h2>
 
         <div class="nav-2">
-          <a href="team.html" class="nav2-item">Schedule</a>
-          <a href="standings.html" class="nav2-item">Standings</a>
-          <a href="waiver.html" class="nav2-item">Waiver</a>
+          <a href="league.html" class="nav2-item">League</a>
+          <a href="conduct.html" class="nav2-item">Code of Conduct</a>
+          <a href="league_policy.html" class="nav2-item">League Policy</a>
+          <a href="headshot_policy.html" class="nav2-item">Headshot Policy</a>
         </div>
 
-        <h3>Blundell Elementary School - Date</h3>
-        <!-- FIRST SCHEDULE ROW -->
+        <p>Bacon ipsum dolor amet picanha chicken beef ribs sirloin. Pancetta rump t-bone turkey landjaeger tail pork belly meatloaf biltong chicken strip steak short loin ground round pork chop. Shankle tail salami jerky spare ribs corned beef. Pork chop short ribs alcatra landjaeger, sausage short loin turducken ribeye pork belly corned beef prosciutto andouille. Fatback strip steak boudin rump doner salami, biltong pig t-bone ground round ribeye short ribs beef. Brisket short loin pork belly pig meatball jowl sausage ball tip rump cupim tongue tri-tip.</p>
 
-        <section id="blundell_map" class="grid-col-8of8 map">
-          <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
-        </section>
-
-        <section class="grid-col-8of8">
-          <table>
-              <tr>
-                <th>Home Team</th>
-                <th>Away Team</th>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-
-          </table>
-         </section>
-
-        <h3>Grauer Elementary School - Date</h3>
-        <!-- SECOND SCHEDULE ROW -->
-
-            <section id="grauer_map" class="grid-col-8of8 map">
-              <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
-            </section>
-
-            <section class="grid-col-8of8">
-              <table>
-                  <tr>
-                    <th>Home Team</th>
-                    <th>Away Team</th>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-
-              </table>
-             </section>
+        <p>Bacon ipsum dolor amet picanha chicken beef ribs sirloin. Pancetta rump t-bone turkey landjaeger tail pork belly meatloaf biltong chicken strip steak short loin ground round pork chop. Shankle tail salami jerky spare ribs corned beef. Pork chop short ribs alcatra landjaeger, sausage short loin turducken ribeye pork belly corned beef prosciutto andouille. Fatback strip steak boudin rump doner salami, biltong pig t-bone ground round ribeye short ribs beef. Brisket short loin pork belly pig meatball jowl sausage ball tip rump cupim tongue tri-tip.</p>
 
       </section>
 
@@ -275,34 +206,7 @@
 
     </div>
 
-    <script>
-      function initMap() {
-        var blundell_elem = {lat: 49.155, lng: -123.151};
-        var grauer_elem = {lat: 49.155, lng: -123.174};
-        var blundell_map = new google.maps.Map(document.getElementById('blundell_map'), {
-          zoom: 12,
-          center: blundell_elem
-        });
-        var marker = new google.maps.Marker({
-          position: blundell_elem,
-          map: blundell_map
-        });
-
-        var grauer_map = new google.maps.Map(document.getElementById('grauer_map'), {
-          zoom: 12,
-          center: grauer_elem
-        });
-        var marker = new google.maps.Marker({
-          position: grauer_elem,
-          map: grauer_map
-        });
-      }
-
-    </script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcqNU5NhVMz1wLirvRiuZeReo_9D8nSg&callback=initMap">
-    </script>
 
   </body>
+
 </html>

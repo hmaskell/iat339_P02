@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RDL - SEASON 8 TEAM SCHEDULING</title>
+    <title>RDL - SINGLES</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -96,92 +96,64 @@
 
     <div class="grid-row">
 
-      <!-- SEASON 8 TEAM SCHEDULE -->
+      <!-- CURRENT CONTENT -->
 
-      <section id="schedule-content" class="grid-col-5of8">
+      <section class="grid-col-5of8">
 
-        <h2>Season 8 Team Schedule</h2>
+        <h2>Singles</h2>
 
         <div class="nav-2">
-          <a href="team.html" class="nav2-item">Schedule</a>
-          <a href="standings.html" class="nav2-item">Standings</a>
-          <a href="waiver.html" class="nav2-item">Waiver</a>
+           <a href="registration.html" class="nav2-item">Registration</a>
+           <a href="singles.html" class="nav2-item">Singles</a>
         </div>
 
-        <h3>Blundell Elementary School - Date</h3>
-        <!-- FIRST SCHEDULE ROW -->
+        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
+        <figure>
+          <p>
+            Richmond's first and only dodgeball league is proud to announce the 3rd spring season. You can expect a community of 100+ players, high quality play at all skill levels, epic playoff matches and of course loads of fun! Play dodgeball, stay active, meet new friends, be part of a great community, and get ready for good times!
 
-        <section id="blundell_map" class="grid-col-8of8 map">
-          <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
-        </section>
+            You'll want to sign up quick as our spring season sold out in less than 24 hours last year. More details will come soon, so keep your eyes on this space and on social media.
+          </p>
 
-        <section class="grid-col-8of8">
-          <table>
-              <tr>
-                <th>Home Team</th>
-                <th>Away Team</th>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
-              <tr>
-                <td>Team Name</td>
-                <td>Team Name</td>
-              </tr>
+          <a href="mailto:info@rdldodgeball.ca" id="button">
+            Register Now!
+          </a>
 
-          </table>
-         </section>
+        </figure>
 
-        <h3>Grauer Elementary School - Date</h3>
-        <!-- SECOND SCHEDULE ROW -->
+        <figure>
+          <h3>Spring Season Details</h3>
+          <ul>
+            <li>
+              6 weeks of dodgeball and 1 playoff weekend
+            </li>
+            <li>
+              Draft season - play with new people
+            </li>
+            <li>
+              Co-ed teams of 7; 3 females on court at all times
+            </li>
+            <li>
+              All players must be 19 or older
+            </li>
+          </ul>
+          <p><strong>Cost:</strong> $TBD</p>
+        </figure>
 
-            <section id="grauer_map" class="grid-col-8of8 map">
-              <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
-            </section>
+        <figure>
+            <h3>When</h3>
+            <p>April 16th, 2018 - April 28th, 2018</p>
+        </figure>
 
-            <section class="grid-col-8of8">
-              <table>
-                  <tr>
-                    <th>Home Team</th>
-                    <th>Away Team</th>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
-                  <tr>
-                    <td>Team Name</td>
-                    <td>Team Name</td>
-                  </tr>
+        <figure>
+            <h3>Where</h3>
+            <p>Blundell and Garden City Elementary</p>
+        </figure>
 
-              </table>
-             </section>
-
+        <figure>
+            <h3>Playoffs</h3>
+            <p>June 2nd, 2018</p>
+        </figure>
       </section>
 
 
@@ -275,34 +247,7 @@
 
     </div>
 
-    <script>
-      function initMap() {
-        var blundell_elem = {lat: 49.155, lng: -123.151};
-        var grauer_elem = {lat: 49.155, lng: -123.174};
-        var blundell_map = new google.maps.Map(document.getElementById('blundell_map'), {
-          zoom: 12,
-          center: blundell_elem
-        });
-        var marker = new google.maps.Marker({
-          position: blundell_elem,
-          map: blundell_map
-        });
-
-        var grauer_map = new google.maps.Map(document.getElementById('grauer_map'), {
-          zoom: 12,
-          center: grauer_elem
-        });
-        var marker = new google.maps.Marker({
-          position: grauer_elem,
-          map: grauer_map
-        });
-      }
-
-    </script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcqNU5NhVMz1wLirvRiuZeReo_9D8nSg&callback=initMap">
-    </script>
 
   </body>
+
 </html>
