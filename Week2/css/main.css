@@ -224,6 +224,31 @@ input:active, input:hover, input:focus {
   transition: background-color 0.5s ease-out;
 }
 
+.nav2{
+  display: flex;
+}
+
+.nav2-item{
+  display: inline-block;
+  background-color: #F15F23;
+  color: white;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.25rem;
+  transition: background-color 0.5s ease-out;
+}
+
+.nav2-item:hover, .nav2-item:focus .nav2-item:active, {
+  background-color: #EF7362;
+  color: white;
+  transition: background-color 0.5s ease-out;
+}
+
+.nav2-item a:active{
+  background-color: black;  
+}
 
 /* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
 
