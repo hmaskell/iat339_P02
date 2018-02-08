@@ -101,7 +101,7 @@ table, th, td {
   text-align: center;
   padding: .5rem;
 }
- 
+
 th {
   background-color: #008FD3;
   color:#FFF;
@@ -147,7 +147,7 @@ a:active, a:hover, a:focus {
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.6rem;
   margin: 0.25rem 0.125rem;;
   transition: background-color 0.5s ease-out;
   border-radius: .3rem;
@@ -247,7 +247,7 @@ input:active, input:hover, input:focus {
 }
 
 .nav2-item a:active{
-  background-color: black;  
+  background-color: black;
 }
 
 /* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
