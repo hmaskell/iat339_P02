@@ -140,7 +140,7 @@ article {
 }
 
 #swatch-black {
-  background-color: #000000;
+  background-color: #212121;
 }
 
 #swatch-black:hover {
@@ -317,7 +317,7 @@ table, th, td {
   text-align: center;
   padding: .5rem;
 }
- 
+
 th {
   background-color: #008FD3;
   color:#FFF;
