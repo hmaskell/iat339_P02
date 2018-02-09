@@ -1,0 +1,253 @@
+<!--
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
+
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
+
+  index.html
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RDL - SINGLES</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- HEADER AND NAVIGATION SECTION -->
+
+    <section id="header" class="grid-row">
+
+      <div class="grid-col-header-title">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Richmond Dodgeball League Logo">
+        </a>
+      </div>
+
+      <nav class="grid-col-header-navbar grid-row">
+
+        <div class="grid-col-navitem">
+          <a href="news.html" class="nav-item">
+            News
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="registration.html" class="nav-item">
+            Registration
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="schedule.html" class="nav-item">
+            Season 8 Team Schedule
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="league.html" class="nav-item">
+            League
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+          <a href="about.html" class="nav-item">
+            About
+          </a>
+        </div>
+
+        <div class="grid-col-navitem">
+
+          <!-- From Andrew's Week 1 index.html -->
+          <form method="post" action="#">
+            <label for="form-search">Search:</label>
+            <input type="text" id="form-search" placeholder="RDL Website">
+            <input type="submit" value="Search">
+          </form>
+
+        </div>
+
+      </nav>
+
+    </section>
+
+    <!-- FIRST BODY DIVISION -->
+
+    <div class="grid-row">
+
+      <!-- CURRENT CONTENT -->
+
+      <section class="grid-col-5of8">
+
+        <h2>Singles</h2>
+
+        <div class="nav-2">
+           <a href="registration.html" class="nav2-item">Registration</a>
+           <a href="singles.html" class="nav2-item">Singles</a>
+        </div>
+
+        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
+        <figure>
+          <p>
+            Richmond's first and only dodgeball league is proud to announce the 3rd spring season. You can expect a community of 100+ players, high quality play at all skill levels, epic playoff matches and of course loads of fun! Play dodgeball, stay active, meet new friends, be part of a great community, and get ready for good times!
+
+            You'll want to sign up quick as our spring season sold out in less than 24 hours last year. More details will come soon, so keep your eyes on this space and on social media.
+          </p>
+
+          <a href="mailto:info@rdldodgeball.ca" id="button">
+            Register Now!
+          </a>
+
+        </figure>
+
+        <figure>
+          <h3>Spring Season Details</h3>
+          <ul>
+            <li>
+              6 weeks of dodgeball and 1 playoff weekend
+            </li>
+            <li>
+              Draft season - play with new people
+            </li>
+            <li>
+              Co-ed teams of 7; 3 females on court at all times
+            </li>
+            <li>
+              All players must be 19 or older
+            </li>
+          </ul>
+          <p><strong>Cost:</strong> $TBD</p>
+        </figure>
+
+        <figure>
+            <h3>When</h3>
+            <p>April 16th, 2018 - April 28th, 2018</p>
+        </figure>
+
+        <figure>
+            <h3>Where</h3>
+            <p>Blundell and Garden City Elementary</p>
+        </figure>
+
+        <figure>
+            <h3>Playoffs</h3>
+            <p>June 2nd, 2018</p>
+        </figure>
+      </section>
+
+
+      <!-- EVENTS AND SCHEDULING -->
+
+      <section id="events-and-scheduling" class="grid-col-3of8">
+
+        <h2>Events and Scheduling</h2>
+
+        <!-- TO DO: Make it an unordered list or have every item as a section -->
+        <div class="event-list">
+
+          <div class="event-container">
+            <p>
+              Photo Week on Week 3 - Monday, February 5th at your gym
+            </p>
+          </div>
+
+          <div class="event-container">
+            <p>
+              5-on-5 Dodgeball Tournament on Friday, February 9th at Blundell Elementary School
+            </p>
+          </div>
+
+          <div class="event-container">
+            <p>
+              Appreciation Banquet - Saturday, March 24th at Tin Tin Seafood Harbour
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- SECOND BODY DIVISION -->
+
+    <div class="grid-row">
+
+      <!-- QUICK CONTACT LINK -->
+
+      <section id="quick-contact" class="grid-col-8of8">
+
+        <h2>Quick Contact Link</h2>
+
+        <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
+        <p>
+          Have questions?
+          <a href="mailto:info@rdldodgeball.ca" id="quick-contact-link">
+            Shoot us an email!
+          </a>
+        </p>
+
+      </section>
+
+    </div>
+
+    <!-- THIRD BODY DIVISION -->
+
+    <div class="grid-row">
+
+      <!-- SOCIAL MEDIA INFO AND LINKS -->
+
+      <section id="social-media" class="grid-col-5of8">
+
+        <h2>Social Media Platforms</h2>
+
+        <!-- TO DO: How should this look like? -->
+        <a href="https://www.facebook.com/RDLDodgeball" target="_blank">
+          Like us on Facebook
+        </a>
+
+        <a href="https://twitter.com/rdldodgeball/" target="_blank">
+          Follow us on Twitter
+        </a>
+
+      </section>
+
+      <!-- COPYRIGHT INFORMATION -->
+
+      <section id="copyright" class="grid-col-3of8">
+
+        <h2>Copyright Information</h2>
+
+        <p>
+          Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+        </p>
+
+      </section>
+
+    </div>
+
+
+  </body>
+
+</html>
