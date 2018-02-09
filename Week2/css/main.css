@@ -139,7 +139,7 @@ a:active, a:hover, a:focus {
   transition: color 0.5s ease-out;
 }
 
-#button {
+.button {
   display: inline-block;
   background-color: #008FD3;
   color: white;
@@ -153,7 +153,7 @@ a:active, a:hover, a:focus {
   border-radius: .3rem;
 }
 
-#button:active, #button:hover, #button:focus {
+.button:active, .button:hover, .button:focus {
   background-color: #43ADE0;
   transition: background-color 0.5s ease-out;
 }
@@ -240,7 +240,7 @@ input:active, input:hover, input:focus {
   transition: background-color 0.5s ease-out;
 }
 
-.nav2-item:hover, .nav2-item:focus .nav2-item:active, {
+.nav2-item:hover, .nav2-item:focus, .nav2-item:active {
   background-color: #EF7362;
   color: white;
   transition: background-color 0.5s ease-out;
