@@ -1,3 +1,18 @@
+<!--
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
+
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
+
+  styleguide.html
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
+-->
+
 <!DOCTYPE html>
 <html lang= "en">
 
@@ -6,7 +21,7 @@
     <meta charset="utf-8">
     <meta name= "viewport" content= "width=device-width, initial-scale=1">
 
-    <title>P02 - Style Guide for RDL Dodgeball</title>
+    <title>P02 - Style Guide for Richmond Dodgeball League</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -18,345 +33,427 @@
   <body>
 
     <div id="header">
-      <h1>P02 - Style Guide for RDL Dodgeball</h1>
+      <h1>P02 - Style Guide for Richmond Dodgeball League</h1>
       <p>Style Guide for RDL Dodgeball.</p>
     </div>
 
     <div class="flex-container" id="nav-containter">
       <nav>
-          <a href="#colours">Colour Palette</a>
-          <a href="#fonts">Fonts</a>
-          <a href="#interactive_elements">Interactive Elements</a>
-          <a href="#text_elements">Text Elements</a>
-          <a href="#combined_elements">Combined Elements</a>
-          <a href="#site_map">Site Map</a>
+        <a href="#colours">Colour Palette</a>
+        <a href="#fonts">Fonts</a>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#site_map">Site Map</a>
       </nav>
     </div>
 
-      <!-- COLOUR PALETTE // -->
+    <!-- COLOUR PALETTE // -->
     <section class="main-section" id="colours">
-        <h2>Colour Palette</h2>
-        <ul class="colours">
-          <li>
-            <span class="swatch" id="swatch-black"></span>
-            <span class="label"> #000000;</span>
-          </li>
-          <li>
-            <span class="swatch" id="swatch-white"></span>
-            <span class="label"> #FFFFFF;</span>
-          </li>
-          <li>
-            <span class="swatch" id="swatch-orange"></span>
-            <span class="label"> #F15F23;</span>
-          </li>
-          <li>
-            <span class="swatch" id="swatch-blue"></span>
-            <span class="label"> #008FD3;</span>
-          </li>
-        </ul>
+
+      <h2>Colour Palette</h2>
+
+      <ul class="colours">
+
+        <li>
+          <span class="swatch" id="swatch-black"></span>
+          <span class="label"> #000000;</span>
+        </li>
+
+        <li>
+          <span class="swatch" id="swatch-white"></span>
+          <span class="label"> #FFFFFF;</span>
+        </li>
+
+        <li>
+          <span class="swatch" id="swatch-orange"></span>
+          <span class="label"> #F15F23;</span>
+        </li>
+
+        <li>
+          <span class="swatch" id="swatch-blue"></span>
+          <span class="label"> #008FD3;</span>
+        </li>
+
+      </ul>
+
     </section>
 
     <!--FONTS SECTION-->
     <section class="main-section" id="fonts">
+
       <h2>Fonts</h2>
-        <h4>Headings and Title text:</h4>
-          <p>$font: Quicksand, sans-serif;</p>
-          <p><strong>$font-bold: Quicksand Bold, sans-serif;</strong></p>
-        <h4>Body Text</h4>
-          <p>$font: Roboto, sans-serif;</p>
+
+      <h4>Headings and Title text:</h4>
+
+      <p>$font: Quicksand, sans-serif;</p>
+      <p><strong>$font-bold: Quicksand Bold, sans-serif;</strong></p>
+
+      <h4>Body Text</h4>
+
+      <p>$font: Roboto, sans-serif;</p>
+
     </section>
 
-      <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section class="main-section" id="interactive_elements">
-        <h2>Interactive Elements</h2>
-        <section class="sub-section" id="navigation">
-          <h3>Navigation Button</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section class="main-section" id="interactive_elements">
 
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button-nav"&gt;DEFAULT BUTTON&lt;/a&gt;</code>
+      <h2>Interactive Elements</h2>
 
-            <h4>Rendered element:</h4>
-            <a class="button-nav" href="#">DEFAULT BUTTON</a>
-          </article>
-        </section>
+      <section class="sub-section" id="navigation">
 
-        <section class="sub-section" id="intxt-link">
-          <h3>In-text link</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>.a</p>
+        <h3>Navigation Button</h3>
 
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#"&gt;Default Link&lt;/a&gt;</code>
+        <article>
 
-            <h4>Rendered element:</h4>
-            <a href="#">Default Link</a>
-          </article>
-        </section>
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
 
-        <section class="sub-section" id="submit-button">
-          <h3>Submit Button</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button-nav"&gt;DEFAULT BUTTON&lt;/a&gt;</code>
 
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button-sub"&gt;SUBMIT&lt;/a&gt;</code>
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#">DEFAULT BUTTON</a>
 
-            <h4>Rendered element:</h4>
-            <a class="button-sub" href="#">SUBMIT</a>
-          </article>
-        </section>
-
-        <section class="sub-section" id="txt-in-field">
-          <h3>Text Input Field</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>.input</p>
-
-            <h4>Sample code:</h4>
-            <code>&lt;input type='text' name='name'/&gt;</code>
-
-            <h4>Rendered element:</h4>
-            <input type='text' name='name'/>
-          </article>
-        </section>
+        </article>
 
       </section>
-      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-      <!-- TEXT ELEMENTS SECTION // -->
-      <section class="main-section" id="text_elements">
-        <h2>Text Elements</h2>
-        <section class="sub-section" id="headings">
-          <h3>Headings</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>h1, h2, h3, h4</p>
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;h1&gt;Level one heading&lt;/h1&gt;
-                &lt;h2&gt;Level two heading&lt;/h2&gt;
-                &lt;h3&gt;Level three heading&lt;/h3&gt;
-                &lt;h4&gt;Level four heading&lt;/h4&gt;</code>
-            </pre>
-            <h4>Rendered element:</h4>
-            <h1>Level one heading</h1>
-            <h2>Level two heading</h2>
-            <h3>Level three heading</h3>
-            <h4>Level four heading</h4>
+      <section class="sub-section" id="intxt-link">
 
-          </article>
-        </section>
+        <h3>In-text link</h3>
 
-        <section class="sub-section" id="paragraphs">
-          <h3>Paragraphs</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>p</p>
+        <article>
+          <h4>CSS selector:</h4>
+          <p>.a</p>
 
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;</code>
-            </pre>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;Default Link&lt;/a&gt;</code>
 
-            <h4>Rendered element:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          </article>
-        </section>
+          <h4>Rendered element:</h4>
+          <a href="#">Default Link</a>
 
-        <section class="sub-section" id="bullet-list">
-          <h3>Bulleted Lists</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>ul</p>
-
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;ul&gt;
-                  &lt;li&gt;One bullet&lt;/li&gt;
-                  &lt;li&gt;Two bullets&lt;/li&gt;
-                  &lt;li&gt;Three bullets&lt;/li&gt;
-                &lt;/ul&gt;</code>
-            </pre>
-
-            <h4>Rendered element:</h4>
-            <ul>
-              <li>One bullet</li>
-              <li>Two bullets</li>
-              <li>Three bullets</li>
-            </ul>
-          </article>
-        </section>
-
-        <section class="sub-section" id="number-list">
-          <h3>Numbered Lists</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>ol</p>
-
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;ol&gt;
-                  &lt;li&gt;One bullet&lt;/li&gt;
-                  &lt;li&gt;Two bullets&lt;/li&gt;
-                  &lt;li&gt;Three bullets&lt;/li&gt;
-                &lt;/ol&gt;</code>
-            </pre>
-
-            <h4>Rendered element:</h4>
-            <ol>
-              <li>One bullet</li>
-              <li>Two bullets</li>
-              <li>Three bullets</li>
-            </ol>
-          </article>
-        </section>
+        </article>
 
       </section>
+
+      <section class="sub-section" id="submit-button">
+
+        <h3>Submit Button</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button-sub"&gt;SUBMIT&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a class="button-sub" href="#">SUBMIT</a>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="txt-in-field">
+
+        <h3>Text Input Field</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>.input</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;input type='text' name='name'/&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <input type='text' name='name'/>
+
+        </article>
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section class="main-section" id="text_elements">
+
+      <h2>Text Elements</h2>
+
+      <section class="sub-section" id="headings">
+
+        <h3>Headings</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>h1, h2, h3, h4</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;h1&gt;Level one heading&lt;/h1&gt;
+            &lt;h2&gt;Level two heading&lt;/h2&gt;
+            &lt;h3&gt;Level three heading&lt;/h3&gt;
+            &lt;h4&gt;Level four heading&lt;/h4&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <h1>Level one heading</h1>
+          <h2>Level two heading</h2>
+          <h3>Level three heading</h3>
+          <h4>Level four heading</h4>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="paragraphs">
+
+        <h3>Paragraphs</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="bullet-list">
+
+        <h3>Bulleted Lists</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>ul</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;ul&gt;
+            &lt;li&gt;One bullet&lt;/li&gt;
+            &lt;li&gt;Two bullets&lt;/li&gt;
+            &lt;li&gt;Three bullets&lt;/li&gt;
+            &lt;/ul&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <ul>
+          <li>One bullet</li>
+          <li>Two bullets</li>
+          <li>Three bullets</li>
+          </ul>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="number-list">
+
+        <h3>Numbered Lists</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>ol</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;ol&gt;
+            &lt;li&gt;One bullet&lt;/li&gt;
+            &lt;li&gt;Two bullets&lt;/li&gt;
+            &lt;li&gt;Three bullets&lt;/li&gt;
+            &lt;/ol&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <ol>
+          <li>One bullet</li>
+          <li>Two bullets</li>
+          <li>Three bullets</li>
+          </ol>
+
+        </article>
+
+      </section>
+
+    </section>
     <!-- // END ATOMS-->
     <!-- // TEXT ELEMENTS SECTION -->
 
 
     <!-- COMBINED ELEMENTS SECTION // -->
-      <section class="main-section" id="combined_elements">
-        <h2>Combined Elements</h2>
-        <section class="sub-section" id="block-text">
-          <h3>Text Block</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>p</p>
+    <section class="main-section" id="combined_elements">
 
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;
+      <h2>Combined Elements</h2>
 
-              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;</code>
-            </pre>
+      <section class="sub-section" id="block-text">
 
-            <h4>Rendered element:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h3>Text Block</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          </article>
-        </section>
-        <section class="sub-section" id="video">
-          <h3>Embedded Video</h3>
-          <article>
-            <h4>CSS selector:</h4>
-            <p>.videoWrapper</p>
+        <article>
 
-            <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;iframe width="640" height="360" src="youtube.com/url" allowfullscreen&gt;</code>
-            </pre>
+          <h4>CSS selector:</h4>
+          <p>p</p>
 
-            <h4>Rendered element:</h4>
-            <div class="videoWrapper">
-              <iframe width="640" height="360" src="https://www.youtube.com/embed/bJ1vEQKX-hE" allowfullscreen></iframe>
-            </div>
-          </article>
-        </section>
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;
 
-        <section class="sub-section" id="schedule">
-          <h3>Schedule Template </h3>
-            <p>Similar to product/service listing</p>
-            <article>
-              <h4>CSS selector:</h4>
-              <p>table, th, td</p>
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;</code>
+          </pre>
 
-              <h4>Sample code:</h4>
-              <pre>
-                <code>&lt;table style="width:100%"&gt;
-                  &lt;tr&gt;
-                  &lt;th&gt;Gym&lt;/th&gt;
-                  &lt;th&gt;Court A&lt;/th&gt;
-                  &lt;th&gt;Court B&lt;/th&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                  &lt;td&gt;Garden City&lt;/td&gt;
-                  &lt;td&gt;Team Name 1&lt;/td&gt;
-                  &lt;td&gt;Team Name 2&lt;/td&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                  &lt;td&gt;Blundell&lt;/td&gt;
-                  &lt;td&gt;Team Name 3&lt;/td&gt;
-                  &lt;td&gt;Team Name 4&lt;/td&gt;
-                  &lt;/tr&gt;</code>
-                </pre>
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-              <h4>Rendered element:</h4>
-              <table style="width:100%">
-                <tr>
-                  <th>Gym</th>
-                  <th>Court A</th>
-                  <th>Court B</th>
-                </tr>
-                <tr>
-                  <td>Garden City</td>
-                  <td>Team Name 1</td>
-                  <td>Team Name 2</td>
-                </tr>
-                <tr>
-                  <td>Blundell</td>
-                  <td>Team Name 3</td>
-                  <td>Team Name 4</td>
-                </tr>
-              </table>
-            </article>
-        </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="video">
+
+        <h3>Embedded Video</h3>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>.videoWrapper</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;iframe width="640" height="360" src="youtube.com/url" allowfullscreen&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <div class="videoWrapper">
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/bJ1vEQKX-hE" allowfullscreen></iframe>
+          </div>
+
+        </article>
+
+      </section>
+
+      <section class="sub-section" id="schedule">
+
+        <h3>Schedule Template </h3>
+        <p>Similar to product/service listing</p>
+
+        <article>
+
+          <h4>CSS selector:</h4>
+          <p>table, th, td</p>
+
+          <h4>Sample code:</h4>
+          <pre>
+            <code>&lt;table style="width:100%"&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Gym&lt;/th&gt;
+            &lt;th&gt;Court A&lt;/th&gt;
+            &lt;th&gt;Court B&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;Garden City&lt;/td&gt;
+            &lt;td&gt;Team Name 1&lt;/td&gt;
+            &lt;td&gt;Team Name 2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;Blundell&lt;/td&gt;
+            &lt;td&gt;Team Name 3&lt;/td&gt;
+            &lt;td&gt;Team Name 4&lt;/td&gt;
+            &lt;/tr&gt;</code>
+          </pre>
+
+          <h4>Rendered element:</h4>
+          <table style="width:100%">
+          <tr>
+          <th>Gym</th>
+          <th>Court A</th>
+          <th>Court B</th>
+          </tr>
+          <tr>
+          <td>Garden City</td>
+          <td>Team Name 1</td>
+          <td>Team Name 2</td>
+          </tr>
+          <tr>
+          <td>Blundell</td>
+          <td>Team Name 3</td>
+          <td>Team Name 4</td>
+          </tr>
+          </table>
+
+        </article>
+
+      </section>
 
       <section class="sub-section" id="navbar">
+
         <h3>Main Navigation</h3>
+
         <article>
+
           <h4>CSS selector:</h4>
           <p>.button-nav, section#navbar</p>
 
           <h4>Sample code:</h4>
           <pre>
             <code>&lt;span class="logo"&gt;
-              &lt;img src="img/logo.jpg" alt="RDL logo"&gt;
-              &lt;/span&gt;
-              &lt;a href="#" class="button-nav">News&lt;/a&gt;
-              &lt;a href="#" class="button-nav">Registration&lt;/a&gt;
-              &lt;a href="#" class="button-nav">Season 8&lt;/a&gt;
-              &lt;a href="#" class="button-nav">League&lt;/a&gt;
-              &lt;a href="#" class="button-nav">About&lt;/a&gt;
+            &lt;img src="img/logo.jpg" alt="RDL logo"&gt;
+            &lt;/span&gt;
+            &lt;a href="#" class="button-nav">News&lt;/a&gt;
+            &lt;a href="#" class="button-nav">Registration&lt;/a&gt;
+            &lt;a href="#" class="button-nav">Season 8&lt;/a&gt;
+            &lt;a href="#" class="button-nav">League&lt;/a&gt;
+            &lt;a href="#" class="button-nav">About&lt;/a&gt;
             </code>
           </pre>
-          <h4>Rendered element:</h4>
 
-          <ul>
-            <span class="logo">
-              <img src="img/logo.jpg" alt="RDL logo">
-            </span>
-            <a href="#" class="button-nav">News</a>
-            <a href="#" class="button-nav">Registration</a>
-            <a href="#" class="button-nav">Season 8</a>
-            <a href="#" class="button-nav">League</a>
-            <a href="#" class="button-nav">About</a>
-          </ul>
+          <h4>Rendered element:</h4>
+          <span class="logo">
+          <img src="img/logo.jpg" alt="RDL logo">
+          </span>
+          <a href="#" class="button-nav">News</a>
+          <a href="#" class="button-nav">Registration</a>
+          <a href="#" class="button-nav">Season 8</a>
+          <a href="#" class="button-nav">League</a>
+          <a href="#" class="button-nav">About</a>
+
         </article>
+
       </section>
 
       <section class="sub-section" id="form">
+
         <h3>Form</h3>
+
         <article>
+
           <h4>CSS selector:</h4>
           <p>section#form input, section#form textarea, section#form .button-sub</p>
 
           <h4>Sample code:</h4>
           <pre>
             <code>&lt;p&gt;Your Name&lt;/p&gt;
-              &lt;input type='text' name='name'/&gt;
-              &lt;p&gt;Your Email Address&lt;/p&gt;
-              &lt;input type='text' name='email'/&gt;
-              &lt;p&gt;Your Message&lt;/p&gt;
-              &lt;textarea style='height: 2rem;' name='message'&gt;&lt;/textarea&gt;
-              &lt;input type='submit' class='button-sub' value='Send Message'&gt;
+            &lt;input type='text' name='name'/&gt;
+            &lt;p&gt;Your Email Address&lt;/p&gt;
+            &lt;input type='text' name='email'/&gt;
+            &lt;p&gt;Your Message&lt;/p&gt;
+            &lt;textarea style='height: 2rem;' name='message'&gt;&lt;/textarea&gt;
+            &lt;input type='submit' class='button-sub' value='Send Message'&gt;
             </code>
           </pre>
 
@@ -369,46 +466,54 @@
           <textarea style='height: 2rem;' name='message'></textarea>
           <input type='submit' class='button-sub' value='Send Message'>
         </article>
+
       </section>
+
     </section>
 
-      <section class="main-section" id="grid">
-        <h3>Website Grid</h3>
-        <article>
-          <h4>CSS selector:</h4>
-          <p>.wrapper, .one, .two, .three, .four, .five, .six, .seven</p>
+    <section class="main-section" id="grid">
 
-          <h4>Sample code:</h4>
-          <pre>
-            <code>&lt;div class="wrapper"&gt;
-              &lt;div class="one"&gt;Header and Nav Section&lt;/div&gt;
-              &lt;div class="two"&gt;Current Content (Photo w/ text overlay)&lt;/div&gt;
-              &lt;div class="three"&gt;Events & Scheduling&lt;/div&gt;
-              &lt;div class="four"&gt;Quick Contact Link&lt;/div&gt;
-              &lt;div class="five"&gt;Social Media 1&lt;/div&gt;
-              &lt;div class="six"&gt;Social Media 2&lt;/div&gt;
-              &lt;div class="seven"&gt;Copyright Info&lt;/div&gt;
-            </code>
-          </pre>
+      <h3>Website Grid</h3>
 
-          <h4>Rendered element:</h4>
-          <div class="wrapper">
-            <div class="one">Header & Nav Section</div>
-            <div class="two">Current Content (Photo w/ text overlay)</div>
-            <div class="three">Events & Scheduling</div>
-            <div class="four">Quick Contact Link</div>
-            <div class="five">Social Media 1</div>
-            <div class="six">Social Media 2</div>
-            <div class="seven">Copyright Info</div>
-          </div>
-        </article>
-      </section>
+      <article>
+
+        <h4>CSS selector:</h4>
+        <p>.wrapper, .one, .two, .three, .four, .five, .six, .seven</p>
+
+        <h4>Sample code:</h4>
+        <pre>
+          <code>&lt;div class="wrapper"&gt;
+          &lt;div class="one"&gt;Header and Nav Section&lt;/div&gt;
+          &lt;div class="two"&gt;Current Content (Photo w/ text overlay)&lt;/div&gt;
+          &lt;div class="three"&gt;Events & Scheduling&lt;/div&gt;
+          &lt;div class="four"&gt;Quick Contact Link&lt;/div&gt;
+          &lt;div class="five"&gt;Social Media 1&lt;/div&gt;
+          &lt;div class="six"&gt;Social Media 2&lt;/div&gt;
+          &lt;div class="seven"&gt;Copyright Info&lt;/div&gt;
+          </code>
+        </pre>
+
+        <h4>Rendered element:</h4>
+        <div class="wrapper">
+        <div class="one">Header & Nav Section</div>
+        <div class="two">Current Content (Photo w/ text overlay)</div>
+        <div class="three">Events & Scheduling</div>
+        <div class="four">Quick Contact Link</div>
+        <div class="five">Social Media 1</div>
+        <div class="six">Social Media 2</div>
+        <div class="seven">Copyright Info</div>
+        </div>
+
+      </article>
+
+    </section>
 
     <section class="main-section" id="site_map">
       <h2>Site Map</h2>
-      <img id="sitemap" src="img/sitemap-01.png" alt="Image of Site Map">
-      <img id="sitemap" src="img/sitemap-02.png" alt="Preview of Home Page">
+      <img id="sitemap-01" src="img/sitemap-01.png" alt="Image of Site Map">
+      <img id="sitemap-02" src="img/sitemap-02.png" alt="Preview of Home Page">
     </section>
 
   </body>
+
 </html>
