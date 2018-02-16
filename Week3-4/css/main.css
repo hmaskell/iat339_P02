@@ -165,11 +165,11 @@ a:active, a:hover, a:focus {
 */
 
 form {
-  margin: 0.5rem 0;
+  padding-left:1.6rem;
 }
 
 input {
-  color: white;
+  color: black;
   background-color: #008FD3;
 
   font-family: 'Quicksand', Helvetica, sans-serif;
@@ -185,43 +185,44 @@ input {
 }
 
 input[type=text] {
-  background-color: white;
-  border: 1px solid #43ADE0;
-  width: 10rem;
+    width: 7rem;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    transition: max-width 0.5s ease-out;
 }
 
-input[value=Search]{
-  border-radius: 7px;
-}
-
-input:active, input:hover, input:focus {
-  background-color: #43ADE0;
-  transition: background-color 0.5s ease-out;
-}
-
-::placeholder {
+input[type=text]:placeholder {
   color: #212121;
 }
 
+.icon{
+  border-style: none;
+  background-color: white;
+  color: #008FD3;
+  transition: color 0.5s ease-out;
+}
+
+.icon:hover{
+  color: #F15F23;
+}
 
 /* NAVIGATION */
 
-.nav-item {
-  display: inline-block;
-  background-color: #F15F23;
-  color: white;
+.button-nav {
   font-family: 'Quicksand', Helvetica, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.25em 1.6em;
+  color: #008FD3;
   text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  margin: 0.25rem 0.125rem;
-  transition: background-color 0.5s ease-out;
 }
 
-.nav-item:active, .nav-item:hover, .nav-item:focus {
-  background-color: #EF7362;
-  color: white;
-  transition: background-color 0.5s ease-out;
+.button-nav:hover, .button-nav:focus {
+  color: #F15F23;
+  text-decoration: underline;
 }
 
 .nav2{
@@ -274,4 +275,11 @@ input:active, input:hover, input:focus {
 iframe {
   width: 100%;
   height: 23rem;
+}
+
+@media max-width: 776{
+  input[type=text] {
+    max-width: 6rem;
+    padding-left: 0;
+  }
 }

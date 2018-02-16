@@ -51,11 +51,6 @@ h2 {
 	width: 100%;
 }
 
-nav a {
-	text-align: center;
-	width: 100%;
-}
-
 section {
 	margin: 1rem 0;
 }
@@ -139,6 +134,7 @@ section {
 
 [class^="grid-col-header-navbar"] {
 	flex-basis: 75%;
+	padding-top: 1.3rem;
 }
 
 [class^="grid-col-navitem"] {
