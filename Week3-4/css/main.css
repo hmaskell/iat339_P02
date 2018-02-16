@@ -64,6 +64,29 @@ h4 {
   margin: 0.5rem 0;
 }
 
+/* FOOTER */
+
+#footer{
+  background-color: black;
+}
+
+#copyright p{
+  font-size: 10px;
+  margin-right: 0;
+  padding-left: 30%;
+  color: white;
+}
+
+#socialmedia{
+  padding-left: 10%;
+}
+
+#fb{
+  margin-right: 1rem;
+}
+
+#twitter{
+}
 
 /* TEXT */
 
@@ -122,6 +145,11 @@ figure {
 figcaption {
   font-style: italic;
   margin: 0;
+}
+
+.socialmedia-icon{
+  width: 2rem;
+  padding-top: 1rem;
 }
 
 
@@ -260,7 +288,7 @@ input[type=text]:placeholder {
 }
 
 .event-list .event-container {
-  background-color: #008FD3;
+  background-color: #a5a5a5;
 }
 
 /* GOOGLE MAPS */
@@ -277,9 +305,9 @@ iframe {
   height: 23rem;
 }
 
-@media max-width: 776{
+@media (max-width: 776px){
   input[type=text] {
     max-width: 6rem;
-    padding-left: 0;
+    margin-left: 0;
   }
 }
