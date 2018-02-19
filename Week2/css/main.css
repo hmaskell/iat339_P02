@@ -78,10 +78,8 @@ p {
 }
 
 ol li, ul li {
-  margin: 0.25rem 0;
+  margin: 0.3rem 0;
 }
-
-
 
 
 
@@ -140,7 +138,7 @@ a {
 }
 
 a:active, a:hover, a:focus {
-  color: #EF7362;
+  color: white;
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
@@ -201,10 +199,7 @@ input[value=Search]{
 }
 
 input:active, input:hover, input:focus {
-  /*
-  Taking this out cause it makes the text difficult to read
   background-color: #43ADE0;
-  */
   transition: background-color 0.5s ease-out;
 }
 
