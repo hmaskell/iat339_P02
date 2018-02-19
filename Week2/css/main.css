@@ -195,7 +195,10 @@ input[value=Search]{
 }
 
 input:active, input:hover, input:focus {
+  /*
+  Taking this out cause it makes the text difficult to read
   background-color: #43ADE0;
+  */
   transition: background-color 0.5s ease-out;
 }
 
