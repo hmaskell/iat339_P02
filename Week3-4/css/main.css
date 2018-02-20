@@ -162,7 +162,7 @@ a {
   transition: color 0.5s ease-out;
 }
 
-a:active, a:hover, a:focus, a:visited, a:link{
+a:active, a:hover, a:focus{
   color: #008FD3;
   text-decoration: none;
   transition: color 0.5s ease-out;
@@ -386,14 +386,57 @@ input[type=checkbox] {
       margin-left: 0;
     }
 
+    /* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+    #hamburger{
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      transition: 0.4s;
+    }
+
+    #hamburger:hover{
+      background-color: #F15F23;
+    }
+
+    .ham{
+      width: 20px;
+      height: 3px;
+      background-color: #008FD3;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    /* Rotate first bar */
+    .change #ham-1 {
+        -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    /* Fade out the second bar */
+    .change #ham-2 {
+        -webkit-transform: translate(30px, 0px) scale(0.2, 1.4);
+        transform: ttranslate(30px, 0px) scale(0.2, 1.4);
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change #ham-3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
     #search {
       padding-right:10px;
       position: absolute;
-      right: 0;
+      right: 80px;
       left: initial;
       top: 15px;
       display: inline-block;
       max-height: 30px;
+      cursor: pointer;
     }
 
     .dropbtn{

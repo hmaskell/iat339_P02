@@ -49,11 +49,17 @@
           <img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo">
         </a>
 
-          <form method="post" action="#" id="search">
-            <label hidden for="form-search">Search:</label>
-            <input type="text" id="form-search" placeholder="Search">
-            <button class="icon"><i class="fa fa-search"></i></button>
-          </form>
+        <form method="post" action="#" id="search">
+          <label hidden for="form-search">Search:</label>
+          <input type="text" id="form-search" placeholder="Search">
+          <button class="icon"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div id="hamburger" onclick="ham_menu(this)">
+          <div class="ham" id="ham-1"></div>
+          <div class="ham" id="ham-2"></div>
+          <div class="ham" id="ham-3"></div>
+        </div>
       </div>
 
       <nav class="grid-col-header-navbar grid-row" id="navbar">
@@ -106,12 +112,13 @@
               <a class="child-nav" href="waiver.html"><li>Waiver</li></a>             
               <a class="parent-nav" href="team.html"><li>Season 8</li></a>
               <a class="child-nav" href="standings.html"><li>Standings</li></a>
-              <a class="parent-nav" href="rules.html"><li>Rules</li></a>   
+              <a class="parent-nav" href="league.html"><li>League</li></a>   
               <a class="child-nav" href="conduct.html"><li>Conduct</li></a> 
               <a class="child-nav" href="league_policy.html"><li>League Policy</li></a> 
               <a class="child-nav" href="headshot_policy.html"><li>Headshot Policy</li></a>                                     
               <a class="parent-nav" href="about.html"><li>About</li></a>
-              <a class="child-nav" href="executives.html"><li>Executives</li></a>              
+              <a class="child-nav" href="executives.html"><li>Executives</li></a>      
+              <a class="child-nav" href="contact.html"><li>Contact Us</li></a>         
             </ul>
           </div>
 
@@ -257,6 +264,12 @@
       </section>
 
     </div>
+
+    <script type="text/javascript">
+      function ham_menu(x) {
+          x.classList.toggle("change");
+      }
+    </script>
 
 
   </body>
