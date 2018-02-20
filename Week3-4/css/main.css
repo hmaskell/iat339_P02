@@ -162,7 +162,7 @@ a {
   transition: color 0.5s ease-out;
 }
 
-a:active, a:hover, a:focus, a:visited, a:link{
+a:active, a:hover, a:focus{
   color: #008FD3;
   text-decoration: none;
   transition: color 0.5s ease-out;
@@ -201,6 +201,7 @@ a:active, a:hover, a:focus, a:visited, a:link{
     position: absolute;
     right: 12px;
     top: 20px;
+    transition: 0.4s;
 }
 
 input {
@@ -378,30 +379,80 @@ input[type=checkbox] {
       left: 83%;
       top: 50px;
   }
+
+  #menuToggle{
+    display: none;
+  }
 }
 
   @media (max-width: 776px){
+
     input[type=text] {
       max-width: 6rem;
       margin-left: 0;
     }
 
+    /* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+    #hamburger{
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      transition: 0.4s;
+    }
+
+    .ham{
+      width: 20px;
+      height: 3px;
+      background-color: #008FD3;
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    .ham :hover{
+      background-color: #F15F23;
+    }
+
+    /* Rotate first bar */
+    .change #ham-1 {
+        -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    /* Fade out the second bar */
+    .change #ham-2 {
+        -webkit-transform: translate(30px, 0px) scale(0.2, 1.4);
+        transform: ttranslate(30px, 0px) scale(0.2, 1.4);
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change #ham-3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
     #search {
       padding-right:10px;
       position: absolute;
-      right: 0;
+      right: 50px;
       left: initial;
       top: 15px;
       display: inline-block;
       max-height: 30px;
+      cursor: pointer;
     }
 
     .dropbtn{
       display: none;
+      transition: 0.4s;
     }
 
     #logo{
       max-width: 30%;
+      transition: 0.4s;
     }
 
     input[type=text] {
@@ -417,29 +468,56 @@ input[type=checkbox] {
     }
 
     #menuToggle{
-      display: block;
       text-decoration: none;
+      transition: 0.4s;
+      background-color: #FEFEFE;
+      padding-top: 0;
     }
 
-    a:hover, a:visited, a:link, a:active{
+    a{
+      color: #008FD3;
+    }
+
+    a:hover{
+      color: #F15F23;
+    }
+
+    a:hover, a:visited, a:active, a:link, a:focus{
       text-decoration: none;
       list-style-type: none;
     }
 
     #menu{
-      padding-left: 0
+      padding-left: 0;
+      line-height: 25px;
+    }
+
+    #menu li{
+      padding-left: 6%;
     }
 
     #menu .parent-nav {
-        font-size: 1rem;
-        line-height: 25px;
+        font-size: .9rem;
+        
     }  
 
     #menu .child-nav{
-      font-size: .9rem;
+      font-size: .8rem;
       font-weight: 100;
       position: relative;
       left: 10px;
+    }
+
+    .mobile-nav-section{
+      border-width: 0 0 0.5px 0;
+      border-style: solid;
+      border-color: #d6d6d6;
+    }
+
+    #mobile-nav-top{
+      border-width: 0.5px 0 0.5px 0;
+      border-style: solid;
+      border-color: #d6d6d6;
     }
     
   }
@@ -447,5 +525,15 @@ input[type=checkbox] {
 @media (max-width: 450px) {
     #logo{
       max-width: 8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #search{
+      top: 50px;
+    }
+
+    #hamburger{
+      top: 50px;
     }
 }
