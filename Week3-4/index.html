@@ -98,14 +98,10 @@
           </div>
 
 
-
           <!-- FONT AWESOME search icon: https://fontawesome.com/how-to-use/svg-with-js -->
 
           <div id="menuToggle">
             <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
             <ul id="menu">
               <a class="parent-nav" href="news.html"><li>Blog</li></a>
               <a class="parent-nav" href="registration.html"><li>Registration</li></a>
@@ -266,8 +262,16 @@
     </div>
 
     <script type="text/javascript">
+    var menu = document.getElementById('menuToggle');
+    menu.style.display = 'none';
       function ham_menu(x) {
           x.classList.toggle("change");
+          if (menu.style.display == null || menu.style.display == 'none'){
+            menu.style.display = 'block';
+          }
+          else {
+            menu.style.display = 'none';
+          }
       }
     </script>
 

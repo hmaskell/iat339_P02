@@ -201,6 +201,7 @@ a:active, a:hover, a:focus{
     position: absolute;
     right: 12px;
     top: 20px;
+    transition: 0.4s;
 }
 
 input {
@@ -381,6 +382,7 @@ input[type=checkbox] {
 }
 
   @media (max-width: 776px){
+
     input[type=text] {
       max-width: 6rem;
       margin-left: 0;
@@ -397,16 +399,16 @@ input[type=checkbox] {
       transition: 0.4s;
     }
 
-    #hamburger:hover{
-      background-color: #F15F23;
-    }
-
     .ham{
       width: 20px;
       height: 3px;
       background-color: #008FD3;
       margin: 4px 0;
       transition: 0.4s;
+    }
+
+    .ham :hover{
+      background-color: #F15F23;
     }
 
     /* Rotate first bar */
@@ -431,7 +433,7 @@ input[type=checkbox] {
     #search {
       padding-right:10px;
       position: absolute;
-      right: 80px;
+      right: 50px;
       left: initial;
       top: 15px;
       display: inline-block;
@@ -441,10 +443,12 @@ input[type=checkbox] {
 
     .dropbtn{
       display: none;
+      transition: 0.4s;
     }
 
     #logo{
       max-width: 30%;
+      transition: 0.4s;
     }
 
     input[type=text] {
@@ -462,6 +466,8 @@ input[type=checkbox] {
     #menuToggle{
       display: block;
       text-decoration: none;
+      transition: 0.4s;
+      display: none;
     }
 
     a:hover, a:visited, a:link, a:active{
@@ -490,5 +496,15 @@ input[type=checkbox] {
 @media (max-width: 450px) {
     #logo{
       max-width: 8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #search{
+      top: 50px;
+    }
+
+    #hamburger{
+      top: 50px;
     }
 }
