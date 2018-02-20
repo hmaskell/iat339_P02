@@ -194,7 +194,7 @@ section {
 @media (max-width: 50rem) {
 
 	#quick-contact h2, #quick-contact p, #quick-contact a {
-		text-align: left;
+		text-align: center;
 	}
 
 	[class^="grid-col-"] {

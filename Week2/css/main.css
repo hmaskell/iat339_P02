@@ -78,10 +78,8 @@ p {
 }
 
 ol li, ul li {
-  margin: 0.25rem 0;
+  margin: 0.3rem 0;
 }
-
-
 
 
 
@@ -117,13 +115,19 @@ img {
 
 figure {
   margin: 0;
+
+}
+
+figure p{
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 figcaption {
   font-style: italic;
+  color: #4d4d4d;
   margin: 0;
 }
-
 
 /* LINKS */
 
@@ -134,7 +138,7 @@ a {
 }
 
 a:active, a:hover, a:focus {
-  color: #EF7362;
+  color: white;
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
