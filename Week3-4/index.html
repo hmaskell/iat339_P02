@@ -46,11 +46,17 @@
 
       <div class="grid-col-header-title">
         <a href="index.html">
-          <img src="img/logo.png" alt="Richmond Dodgeball League Logo">
+          <img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo">
         </a>
+
+          <form method="post" action="#" id="search">
+            <label hidden for="form-search">Search:</label>
+            <input type="text" id="form-search" placeholder="Search">
+            <button class="icon"><i class="fa fa-search"></i></button>
+          </form>
       </div>
 
-      <nav class="grid-col-header-navbar grid-row">
+      <nav class="grid-col-header-navbar grid-row" id="navbar">
 
           <a href="news.html" class="button-nav">
             Blog
@@ -68,19 +74,46 @@
             League
           </a>
 
-          <a href="about.html" class="button-nav">
-            About
-          </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="about.html" class="button-nav">
+                About
+              </a> 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="executives.html" class="button-nav">
+                  Executives
+                </a>
+                <a href="contact.html" class="button-nav">
+                  Contact Us
+                </a>
+            </div>
+          </div>
 
 
-          <!-- From Andrew's Week 1 index.html -->
-          <form method="post" action="#">
-            <label hidden for="form-search">Search:</label>
-            <input type="text" id="form-search" placeholder="Search">
-            <button class="icon"><i class="fa fa-search"></i></button>
-          </form>
 
           <!-- FONT AWESOME search icon: https://fontawesome.com/how-to-use/svg-with-js -->
+
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a class="parent-nav" href="news.html"><li>Blog</li></a>
+              <a class="parent-nav" href="registration.html"><li>Registration</li></a>
+              <a class="child-nav" href="waiver.html"><li>Waiver</li></a>             
+              <a class="parent-nav" href="team.html"><li>Season 8</li></a>
+              <a class="child-nav" href="standings.html"><li>Standings</li></a>
+              <a class="parent-nav" href="rules.html"><li>Rules</li></a>   
+              <a class="child-nav" href="conduct.html"><li>Conduct</li></a> 
+              <a class="child-nav" href="league_policy.html"><li>League Policy</li></a> 
+              <a class="child-nav" href="headshot_policy.html"><li>Headshot Policy</li></a>                                     
+              <a class="parent-nav" href="about.html"><li>About</li></a>
+              <a class="child-nav" href="executives.html"><li>Executives</li></a>              
+            </ul>
+          </div>
 
 
       </nav>
@@ -93,9 +126,10 @@
 
       <!-- CURRENT CONTENT -->
 
+
       <section id="current-content" class="grid-col-5of8">
 
-        <h2>Home</h2>
+
 
         <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
         <figure>
@@ -116,7 +150,7 @@
 
       <section id="events-and-scheduling" class="grid-col-3of8">
 
-        <h2>Events</h2>
+        <h2><a href="news.html">Events</a></h2>
 
         <!-- TO DO: Make it an unordered list or have every item as a section -->
         <div class="event-list">
@@ -141,7 +175,7 @@
 
         </div>
 
-        <h2>Scheduling</h2>
+        <h2><a href="schedule.html">Scheduling</a></h2>
 
         <!-- TO DO: Make it an unordered list or have every item as a section -->
         <div class="event-list">
