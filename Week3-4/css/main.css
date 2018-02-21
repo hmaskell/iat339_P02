@@ -163,13 +163,13 @@ a {
   font-weight: bold;
   color: #008FD3;
   text-decoration: none;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 a:active, a:hover, a:focus{
   color: #F15F23;
   text-decoration: none;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 .button {
@@ -188,7 +188,7 @@ a:active, a:hover, a:focus{
 
 .button:active, .button:hover, .button:focus {
   background-color: #43ADE0;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .dropbtn{
@@ -221,7 +221,7 @@ input {
   background-repeat: no-repeat;
   display: inline-block;
 
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 input[type=text] {
@@ -231,7 +231,7 @@ input[type=text] {
     border-radius: 4px;
     font-size: 12px;
     background-color: white;
-    transition: max-width 0.5s ease-out;
+    transition: max-width 0.4s ease-out;
 }
 
 input[type=text]:placeholder {
@@ -242,7 +242,7 @@ input[type=text]:placeholder {
   border-style: none;
   background-color: white;
   color: #008FD3;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 .icon:hover{
@@ -314,7 +314,7 @@ input[type=text]:placeholder {
 
 .button-nav:hover, .button-nav:focus {
   color: #F15F23;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav2{
@@ -330,13 +330,13 @@ input[type=text]:placeholder {
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   margin-bottom: 0.25rem;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .nav2-item:hover, .nav2-item:focus, .nav2-item:active {
   background-color: #EF7362;
   color: white;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .nav2-item a:active{
@@ -506,8 +506,8 @@ input[type=checkbox] {
 
     #menu .parent-nav {
         font-size: .9rem;
-        
-    }  
+
+    }
 
     #menu .child-nav{
       font-size: .8rem;
@@ -527,7 +527,7 @@ input[type=checkbox] {
       border-style: solid;
       border-color: #d6d6d6;
     }
-    
+
   }
 
 @media (max-width: 450px) {
