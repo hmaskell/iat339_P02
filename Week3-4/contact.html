@@ -23,7 +23,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RDL - About</title>
+    <title>RDL - Contact Us</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -137,77 +137,20 @@
 
     <div class="grid-row">
 
-      <!-- CURRENT CONTENT -->
-      <h2>About</h2>
-
-      <section id="current-content" class="grid-col-5of8">
-
-        <div class="grid-row">
-          <section class="grid-col-4of8">
-            <p>
-              The Richmond Dodgeball League was founded in the Fall of 2010 as an extension of the Vancouver Dodgeball League. What started as an 8 team league has blossomed into an organization that now hosts 30 teams and over 250 players.
-            </p>
-            <p>
-              In accordance with the International Dodgeball Association (IDA), the RDL operates under its Official Dodgeball Rules and is a proud member of its initiative to build a strong, social community around the game of dodgeball in the Richmond area.
-            </p>
-          </section>
-
-          <section class="grid-col-4of8">
-            <figure>
-              <img src="img/exec_image.jpg" alt="Dodge Crew exec shirt">
-              <figcaption>
-                Our exec, Michal, wearing his signature orange Dodge Crew shirt.
-              </figcaption>
-            </figure>
-         </section>
-        </div>
-
-      </section>
-
-
-      <!-- EVENTS AND SCHEDULING -->
-
-      <section id="events-and-scheduling" class="grid-col-3of8">
-
-        <h2>Events and Scheduling</h2>
-
-        <!-- TO DO: Make it an unordered list or have every item as a section -->
-        <div class="event-list">
-
-          <div class="event-container">
-            <p>
-              Photo Week on Week 3 - Monday, February 5th at your gym
-            </p>
-          </div>
-
-          <div class="event-container">
-            <p>
-              5-on-5 Dodgeball Tournament on Friday, February 9th at Blundell Elementary School
-            </p>
-          </div>
-
-          <div class="event-container">
-            <p>
-              Appreciation Banquet - Saturday, March 24th at Tin Tin Seafood Harbour
-            </p>
-          </div>
-
-        </div>
-
-      </section>
-
-    </div>
-
-
-    <!-- SECOND BODY DIVISION -->
-
-    <div class="grid-row">
+      <h2>Contact Us</h2>
+      <div id="contact" class="grid-col-4of8">
+        <p>Your Name</p>
+        <input type='text' name='name'/>
+        <p>Your Email Address</p>
+        <input type='text' name='email'/>
+        <p>Your Message</p>
+        <textarea name='message'></textarea>
+        <input type='submit' class='button' value='Send Message'>
+      </div>
 
       <!-- QUICK CONTACT LINK -->
 
-      <section id="quick-contact" class="grid-col-8of8">
-
-        <h2>Questions or Concerns?</h2>
+      <section id="quick-contact" class="grid-col-4of8">
 
         <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
         <p>
@@ -233,11 +176,13 @@
         <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
           <img class="socialmedia-icon" id="fb" src="img/social_media/facebook.png">
         </a>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRDLDodgeball%2F&tabs=timeline&width=300&height=350&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=734051349950724" width="300" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
         <!-- REFERENCE: TWITTER ICON FROM https://about.twitter.com/en_us/company/brand-resources.html -->
         <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
           <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter.png">
         </a>
+        <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/RDLDodgeball?ref_src=twsrc%5Etfw">Tweets by RDLDodgeball</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
       </section>
 
@@ -254,6 +199,7 @@
     </div>
 
     <script type="text/javascript">
+    window.onresize = setMenuClosed;
     var menu = document.getElementById('menuToggle');
     menu.style.display = 'none';
       function ham_menu(x) {
@@ -265,6 +211,13 @@
             menu.style.display = 'none';
           }
       }
+
+      function setMenuClosed() {
+        if (window.innerWidth > 776){
+          menu.style.display = "none";
+        }
+      }
+
     </script>
 
 
