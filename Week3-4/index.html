@@ -280,6 +280,7 @@
     </div>
 
     <script type="text/javascript">
+    window.onresize = setMenuClosed;
     var menu = document.getElementById('menuToggle');
     menu.style.display = 'none';
       function ham_menu(x) {
@@ -291,6 +292,13 @@
             menu.style.display = 'none';
           }
       }
+
+      function setMenuClosed() {
+        if (window.innerWidth > 776){
+          menu.style.display = "none";
+        }
+      }
+
     </script>
 
 
