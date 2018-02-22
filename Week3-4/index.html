@@ -295,29 +295,28 @@
 
     </div>
 
+    <script type="text/javascript">
+      window.onresize = setMenuClosed;
+      var menu = document.getElementById('menuToggle');
+      menu.style.display = 'none';
+        function ham_menu(x) {
+            x.classList.toggle("change");
+            if (menu.style.display == null || menu.style.display == 'none'){
+              menu.style.display = 'block';
+            }
+            else {
+              menu.style.display = 'none';
+            }
+        }
+
+        function setMenuClosed() {
+          if (window.innerWidth > 776){
+            menu.style.display = "none";
+          }
+        }
+    </script>
+
 
   </body>
 
 </html>
-
-<script type="text/javascript">
-window.onresize = setMenuClosed;
-var menu = document.getElementById('menuToggle');
-menu.style.display = 'none';
-  function ham_menu(x) {
-      x.classList.toggle("change");
-      if (menu.style.display == null || menu.style.display == 'none'){
-        menu.style.display = 'block';
-      }
-      else {
-        menu.style.display = 'none';
-      }
-  }
-
-  function setMenuClosed() {
-    if (window.innerWidth > 776){
-      menu.style.display = "none";
-    }
-  }
-
-</script>
