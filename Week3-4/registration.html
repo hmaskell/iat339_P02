@@ -352,17 +352,32 @@
     </div>
 
     <script type="text/javascript">
-    var menu = document.getElementById('menuToggle');
-    menu.style.display = 'none';
-      function ham_menu(x) {
-          x.classList.toggle("change");
-          if (menu.style.display == null || menu.style.display == 'none'){
-            menu.style.display = 'block';
+      
+      window.onresize = setMenu;
+      var menu = document.getElementById('menuToggle');
+      menu.style.display = 'none';
+        function ham_menu(x) {
+          console.log("inside ham_menu");
+            x.classList.toggle("change");
+            if (menu.style.display == null || menu.style.display == 'none'){
+              menu.style.display = 'block';
+            }
+            else {
+              menu.style.display = 'none';
+            }
+        }
+
+        function setMenu() {
+          console.log("window width is " + window.innerWidth);
+          if ((window.innerWidth > 776) && (menu.style.display == "block")){
+            console.log("inside width if");
+            console.log("display before = "+ menu.style.display);
+            menu.style.display = "none";
+            console.log("display after = "+ menu.style.display);
+            var x = document.getElementById('hamburger');
+            x.classList.toggle("change");
           }
-          else {
-            menu.style.display = 'none';
-          }
-      }
+        }
     </script>
 
 
