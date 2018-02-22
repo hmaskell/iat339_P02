@@ -68,25 +68,26 @@ h4 {
 
 #footer{
   background-color: black;
+  padding: 0 1rem;
 }
 
 #copyright p{
-  font-size: 10px;
-  margin-right: 10px;
+  font-size: 0.75rem;
+  /* margin-right: 10px; */
   color: white;
 }
 
 #copyright{
-  max-width: 50%;
+  /* max-width: 50%; */
 }
 
 #socialmedia{
-  padding-left: 10%;
-  max-width: 50%;
+  /* padding-left: 10%; */
+  /* max-width: 50%; */
 }
 
 #fb{
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 #twitter{

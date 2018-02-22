@@ -141,6 +141,13 @@ section {
 }
 
 
+/* COLUMN WIDTHS - OTHER */
+
+[class^="grid-col-socialmedia"] {
+	padding: 0;
+	flex-basis: 50%;
+}
+
 /* MODULES */
 
 
@@ -180,6 +187,10 @@ section {
 		flex-basis: 50%;
 	}
 
+	[class^="grid-col-4of8"] {
+		flex-basis: 100%;
+	}
+
 }
 
 @media (max-width: 64rem) {
@@ -196,6 +207,18 @@ section {
 	#quick-contact h2, #quick-contact p, #quick-contact a {
 		text-align: center;
 	}
+
+	[class^="grid-col-"] {
+		flex-basis: 100%;
+	}
+
+	[class^="grid-col-socialmedia"] {
+		flex-basis: 50%;
+	}
+
+}
+
+@media (max-width: 44rem) {
 
 	[class^="grid-col-"] {
 		flex-basis: 100%;
