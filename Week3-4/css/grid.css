@@ -191,6 +191,10 @@ section {
 		flex-basis: 100%;
 	}
 
+	[class^="grid-col-2of8"] {
+		flex-basis: 50%;
+	}
+
 }
 
 @media (max-width: 64rem) {
