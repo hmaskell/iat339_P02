@@ -16,12 +16,8 @@
 
 /* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
 
-.event-list .event-container p {
-  padding: 0.5rem;
-  color: black;
-}
-
 .event-list .event-container {
+  padding: 0.5rem;
   background-color: #ffffff;
   border-color: #d6d6d6;
   border-width: 1px;
