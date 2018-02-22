@@ -53,12 +53,22 @@ section {
 	margin: 1rem 0;
 }
 
-#quick-contact h2, #quick-contact p, #quick-contact a {
+#quick-contact-special {
+	padding: 6rem 0;
+}
+
+#quick-contact h2, #quick-contact p, #quick-contact a,
+#quick-contact-special h2, #quick-contact-special p, #quick-contact-special a {
 	text-align: center;
 }
 
-#quick-contact p {
+#quick-contact p,
+#quick-contact-special p {
 	max-width: none;
+}
+
+#quick-contact-special h2, #quick-contact-special p, #quick-contact-special a {
+	vertical-align: middle;
 }
 
 
@@ -193,6 +203,10 @@ section {
 
 	[class^="grid-col-2of8"] {
 		flex-basis: 50%;
+	}
+
+	#quick-contact-special {
+		padding: 0;
 	}
 
 }
