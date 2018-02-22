@@ -1,6 +1,16 @@
 /*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
+
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
+
+  styleguide.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
 */
 
 /* body {
@@ -70,7 +80,7 @@ section code {
   display: block;
   padding: 1rem 1.5rem;
   line-height: 1.5rem;
-  margin: 1rem;
+  margin: 0.25rem;
 }
 
 /* section a {
@@ -238,7 +248,7 @@ section a:hover, section a:focus {
 } */
 
 .button-sub {
-  font-family: 'Quicksand-Medium', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
   display: inline-block;
   padding: 0.5em 0.75em;
