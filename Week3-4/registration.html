@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/extras.css">
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -104,11 +105,13 @@
             <input type="checkbox" />
             <ul id="menu">
               <div class="mobile-nav-section" id="mobile-nav-top">
+                <a class="parent-nav" href="index.html"><li>Home</li></a>
+              </div>
+              <div class="mobile-nav-section">
                 <a class="parent-nav" href="news.html"><li>Blog</li></a>
               </div>
               <div class="mobile-nav-section">
                 <a class="parent-nav" href="registration.html"><li>Registration</li></a>
-                <a class="child-nav" href="waiver.html"><li>Waiver</li></a>
               </div>
               <div class="mobile-nav-section">
                 <a class="parent-nav" href="schedule.html"><li>Season 8</li></a>
@@ -116,9 +119,6 @@
               </div>
               <div class="mobile-nav-section">
                 <a class="parent-nav" href="rules.html"><li>Rules</li></a>
-                <a class="child-nav" href="conduct.html"><li>Conduct</li></a>
-                <a class="child-nav" href="league_policy.html"><li>League Policy</li></a>
-                <a class="child-nav" href="headshot_policy.html"><li>Headshot Policy</li></a>
               </div>
               <div class="mobile-nav-section">
                 <a class="parent-nav" href="about.html"><li>About</li></a>
@@ -142,7 +142,7 @@
 
       <section id="current-content" class="grid-col-5of8">
 
-        
+
         <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
         <figure>
           <p>
@@ -154,8 +154,8 @@
           <a href="mailto:info@rdldodgeball.ca" class="button">
             Register Now!
           </a>
-
         </figure>
+
 
         <figure>
           <h3>Spring Season Details</h3>
@@ -198,28 +198,80 @@
 
       <section id="events-and-scheduling" class="grid-col-3of8">
 
-        <h2>Events and Scheduling</h2>
+        <h2 class="h2-special">Events</h2>
 
         <!-- TO DO: Make it an unordered list or have every item as a section -->
         <div class="event-list">
 
-          <div class="event-container">
-            <p>
-              Photo Week on Week 3 - Monday, February 5th at your gym
-            </p>
-          </div>
+          <a href="news.html">
+            <div class="event-container">
+                <h4>Photo Week on Week 3</h4>
+                <p>
+                  Monday, February 5th at your gym
+                </p>
+            </div>
+          </a>
 
-          <div class="event-container">
-            <p>
-              5-on-5 Dodgeball Tournament on Friday, February 9th at Blundell Elementary School
-            </p>
-          </div>
+          <a href="news.html">
+            <div class="event-container">
+              <h4>5-on-5 Dodgeball Tournament</h4>
+              <p>
+                on Friday, February 9th at Blundell Elementary School
+              </p>
+            </div>
+          </a>
 
+          <a href="news.html">
+            <div class="event-container">
+              <h4>Appreciation Banquet</h4>
+              <p>
+                Saturday, March 24th at Tin Tin Seafood Harbour
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+        <h2 class="h2-special">Schedule</h2>
+
+        <!-- TO DO: Make it an unordered list or have every item as a section -->
+        <div class="event-list">
+
+        <a href="schedule.html">
           <div class="event-container">
-            <p>
-              Appreciation Banquet - Saturday, March 24th at Tin Tin Seafood Harbour
-            </p>
+            <h4>Week 1</h4>
+            <p>January 15th</p>
+
           </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 2</h4>
+            <p>January 22nd</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 3</h4>
+            <p>January 29th</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 4</h4>
+            <p>February 5th</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 5</h4>
+            <p>February 19</p>
+          </div>
+        </a>
 
         </div>
 
@@ -256,29 +308,46 @@
 
       <!-- SOCIAL MEDIA INFO AND LINKS -->
 
-      <section id="socialmedia" class="grid-col-4of8">
+      <div id="socialmedia" class="grid-col-4of8">
 
-        <!-- REFERENCE: FACEBOOK ICON FROM https://en.facebookbrand.com/assets/f-logo -->
-        <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
-          <img class="socialmedia-icon" id="fb" src="img/social_media/facebook.png">
-        </a>
+        <div class="grid-row">
 
-        <!-- REFERENCE: TWITTER ICON FROM https://about.twitter.com/en_us/company/brand-resources.html -->
-        <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
-          <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter.png">
-        </a>
+          <div id="facebook-feed" class="grid-col-socialmedia">
 
-      </section>
+            <!-- REFERENCE: FACEBOOK ICON FROM https://en.facebookbrand.com/assets/f-logo -->
+            <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
+              <img class="socialmedia-icon" id="fb" src="img/social_media/facebook.png">
+            </a>
+            <br />
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRDLDodgeball%2F&tabs=timeline&width=300&height=350&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=734051349950724" width="300" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+          </div>
+
+          <div id="twitter-feed" class="grid-col-socialmedia">
+
+            <!-- REFERENCE: TWITTER ICON FROM https://about.twitter.com/en_us/company/brand-resources.html -->
+            <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
+              <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter.png">
+            </a>
+            <br />
+            <a class="twitter-timeline" data-width="300" data-height="350" data-theme="light" href="https://twitter.com/RDLDodgeball?ref_src=twsrc%5Etfw">Tweets by RDLDodgeball</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          </div>
+
+        </div>
+
+      </div>
 
 
+      <!-- COPYRIGHT -->
 
-      <section id="copyright" class="grid-col-4of8">
+      <div id="copyright" class="grid-col-4of8">
 
         <p>
           Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
         </p>
 
-      </section>
+      </div>
 
     </div>
 

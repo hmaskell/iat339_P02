@@ -1,0 +1,443 @@
+/*
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
+
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
+
+  styleguide.css
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
+*/
+
+/* body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+}
+
+#header{
+  padding: 2rem 3rem;
+}
+
+h1 {
+}
+
+h3 {
+  color: #008FD3;
+}
+
+section h2{
+  color: #F15F23;
+}
+
+section p {
+  margin-top: 0;
+  margin-left: 1rem;
+} */
+
+h1 {
+  margin-top: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* #nav-containter{
+  background-color: #008FD3;
+}
+
+nav {
+  text-decoration: none;
+  padding: .5rem;
+  color: #FFFFFF;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+nav a:focus, nav a:visited, nav a:link, nav a:active{
+  text-decoration: none;
+  padding: .5rem .7rem;
+  color: #FFFFFF;
+}
+
+nav a:hover{
+  color: #E8E8E8;
+} */
+
+/* section {
+  display: block;
+  padding: 1rem 3rem;
+  border-bottom: #000 solid .25rem;
+} */
+
+section code {
+  background-color: #EEE;
+  display: block;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  margin: 0.25rem;
+}
+
+/* section a {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+} */
+
+article {
+  padding-bottom: 1.5rem;
+}
+
+
+
+/*
+  COLOUR PALETTE ELEMENTS -------------------
+*/
+.colours {
+  margin-bottom: 35rem;
+}
+
+@media(min-width: 65.5rem){
+  .colours {
+    margin-bottom: 19rem;
+  }
+}
+
+@media(max-width: 35rem){
+  .colours{
+    margin-bottom: 65rem;
+  }
+}
+
+@media(max-width: 560px){
+  .colours{
+    width: 100%;
+  }
+
+  section{
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+@media(max-width: 739px){
+  nav {
+    display: block;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav a{
+    display: block;
+    width:100%;
+  }
+
+  code{
+      line-height: 2.5rem;
+  }
+
+  html{
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+.swatch {
+  height:10rem;
+  width:10rem;
+  padding: .5rem .5rem;
+  display:block;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+#swatch-black {
+  background-color: #212121;
+}
+
+#swatch-black:hover {
+  background-color: #4C4C4C;
+}
+
+#swatch-white {
+  background-color: #FFFFFF;
+}
+
+#swatch-white:hover {
+  background-color: #E8E8E8;
+}
+
+#swatch-orange {
+  background-color: #F15F23;
+}
+
+#swatch-orange:hover {
+  background-color: #EF7362;
+}
+
+#swatch-blue {
+  background-color: #008FD3;
+}
+
+#swatch-blue:hover {
+  background-color: #43ADE0;
+}
+
+.label {
+  font-family: 'Quicksand-Medium', sans-serif;
+  text-align: center;
+  display: block;
+  margin-top: .3rem;
+}
+
+.colours li {
+  list-style: none;
+  float:left;
+  margin: 1rem;
+  border: .1rem solid #000000;
+  padding: .5rem;
+  background: #FFFFFF;
+  border-radius: .5rem;
+  display: block;
+}
+
+/*
+  FONT ELEMENTS -------------------
+*/
+
+.fonts {
+  margin-left: 1rem;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+/* .button-nav {
+  font-family: 'Quicksand-Medium', sans-serif;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  color: #008FD3;
+  background-color: #FFFFFF;
+  border-radius: 0.25em;
+  border-color: #000;
+  text-decoration: none;
+}
+
+.button-nav:hover, .button-nav:focus {
+  color: #F15F23;
+  text-decoration: underline;
+}
+
+section a {
+  color: #008FD3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section a:hover, section a:focus {
+  color: #F15F23;
+  text-decoration: underline;
+} */
+
+.button-sub {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #008FD3;
+  border-radius: 0.25em;
+  text-decoration: none;
+}
+
+.button-sub:hover, .button-sub:focus {
+  background-color: #43ade0;
+  color:#FFF;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+/* input[type="text"] {
+  border: .15rem solid #333;
+  border-radius: .25rem;
+  font: inherit;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+} */
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+section pre code {
+  background-color: #eee;
+  display: block;
+  white-space: pre-line;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+}
+
+li {
+  padding-bottom: .5rem;
+}
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+  vertical-align: middle;
+}
+
+.logo img{
+  max-width:25%;
+}
+
+/*Not Fully Responsive yet ):*/
+/* section#navbar .button-nav {
+  font-size: 1rem;
+} */
+
+.active {
+  color:#F15F23;
+  text-decoration: none;
+}
+
+table, th, td {
+  border: .1rem solid #000000;
+  border-collapse: collapse;
+  text-align: center;
+  padding: .5rem;
+}
+
+th {
+  background-color: #008FD3;
+  color:#FFF;
+}
+
+section#form .button-sub {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  display: block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #008FD3;
+  border-radius: 0.25em;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+section#form .button-sub:hover, .button-sub:focus {
+  background-color: #43ade0;
+  color:#FFF;
+  transition: all .5s;
+  text-decoration: none;
+}
+
+section#form input {
+  margin-bottom: 2rem;
+}
+
+section#form textarea {
+  border: .15rem solid #333;
+  border-radius: .25rem;
+  font: inherit;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  display:block;
+  margin-bottom: 2rem;
+}
+
+section#userflow img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 6;
+  grid-row: 1;
+  background-color: #333333;
+  padding: 2.5rem;
+  color: #FFF;
+  text-align: center;
+}
+.two {
+  grid-column: 1 / 4;
+  grid-row: 2 / 4;
+  background-color: #008FD3;
+  padding: 5rem;
+  color: #FFF;
+  text-align: center;
+}
+.three {
+  grid-column: 4 / 6;
+  grid-row: 2 / 4;
+  background-color: #F15F23;
+  padding: 5rem;
+  color: #FFF;
+  text-align: center;
+}
+.four {
+  grid-column: 1 / 6;
+  grid-row: 4;
+  background-color: #333333;
+  padding: 2.5rem;
+  color: #FFF;
+  text-align: center;
+}
+.five {
+  grid-column: 1 / 2;
+  grid-row: 5;
+  background-color: #F15F23;
+  padding: 5rem;
+  color: #FFF;
+  text-align: center;
+}
+.six {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  background-color: #008FD3;
+  padding: 5rem;
+  color: #FFF;
+  text-align: center;
+}
+
+.seven{
+  grid-column: 4 / 6;
+  grid-row: 5;
+  background-color: #333333;
+  padding: 5rem;
+  color: #FFF;
+  text-align: center;
+}

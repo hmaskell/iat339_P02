@@ -56,37 +56,38 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  margin: 1rem 0;
 }
 
 h4 {
   font-size: 1rem;
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 0rem;
 }
 
 /* FOOTER */
 
 #footer{
   background-color: black;
+  padding: 0 1rem;
 }
 
 #copyright p{
-  font-size: 10px;
-  margin-right: 10px;
+  font-size: 0.75rem;
+  margin: 1rem 0;
+  /* margin-right: 10px; */
   color: white;
 }
 
 #copyright{
-  max-width: 50%;
+  /* max-width: 50%; */
 }
 
 #socialmedia{
-  padding-left: 10%;
-  max-width: 50%;
+  /* padding-left: 10%; */
+  /* max-width: 50%; */
 }
 
 #fb{
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 #twitter{
@@ -96,7 +97,7 @@ h4 {
 
 p, ol, ul {
   max-width: 40rem;
-  margin: 0.5rem 0;
+  margin: 0 0 0.5rem 0;
   color: #212121;
 }
 
@@ -143,7 +144,7 @@ img {
 }
 
 figure {
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 figcaption {
@@ -163,13 +164,13 @@ a {
   font-weight: bold;
   color: #008FD3;
   text-decoration: none;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 a:active, a:hover, a:focus{
   color: #F15F23;
   text-decoration: none;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 .button {
@@ -188,11 +189,7 @@ a:active, a:hover, a:focus{
 
 .button:active, .button:hover, .button:focus {
   background-color: #43ADE0;
-  transition: background-color 0.5s ease-out;
-}
-
-.dropbtn{
-  background-color: none;
+  transition: background-color 0.4s ease-out;
 }
 
 /* FORMS */
@@ -221,7 +218,7 @@ input {
   background-repeat: no-repeat;
   display: inline-block;
 
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 input[type=text], textarea {
@@ -231,10 +228,10 @@ input[type=text], textarea {
     border-radius: 4px;
     font-size: 12px;
     background-color: white;
-    transition: max-width 0.5s ease-out;
+    transition: max-width 0.4s ease-out;
 }
 
-input[type=text]:placeholder {
+input[type=text]::placeholder {
   color: #212121;
 }
 
@@ -247,7 +244,7 @@ textarea {
   border-style: none;
   background-color: white;
   color: #008FD3;
-  transition: color 0.5s ease-out;
+  transition: color 0.4s ease-out;
 }
 
 .icon:hover{
@@ -270,58 +267,6 @@ textarea {
 
 /* NAVIGATION */
 
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  border: none;
-  outline: none;
-  color: #008FD3;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: #008FD3;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .button-nav {
   font-family: 'Quicksand', Helvetica, sans-serif;
   font-size: 1rem;
@@ -333,7 +278,7 @@ textarea {
 
 .button-nav:hover, .button-nav:focus {
   color: #F15F23;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .nav2{
@@ -349,223 +294,15 @@ textarea {
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   margin-bottom: 0.25rem;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .nav2-item:hover, .nav2-item:focus, .nav2-item:active {
   background-color: #EF7362;
   color: white;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.4s ease-out;
 }
 
 .nav2-item a:active{
   background-color: black;
-}
-
-/* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
-
-.event-list .event-container p {
-  padding: 0.5rem;
-  color: black;
-}
-
-.event-list .event-container {
-  background-color: #ffffff;
-  border-color: #d6d6d6;
-  border-width: 1px;
-  border-style: solid;
-  margin: 5px 0;
-
-}
-
-/* GOOGLE MAPS */
-
-.map{
-  width: 100%;
-  height: 15rem;
-}
-
-/* VIDEO */
-
-iframe {
-  width: 100%;
-  height: 23rem;
-}
-
-#menuToggle {
-  display: none;
-}
-
-input[type=checkbox] {
-  display: none;
-}
-
-@media (max-width: 1024px){
-  #search {
-      position: relative;
-      left: 83%;
-      top: 50px;
-  }
-
-  #menuToggle{
-    display: none;
-  }
-}
-
-  @media (max-width: 776px){
-
-    #search input[type=text] {
-      max-width: 6rem;
-      margin-left: 0;
-    }
-
-    /* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
-
-    #hamburger{
-      display: inline-block;
-      cursor: pointer;
-      position: absolute;
-      right: 20px;
-      top: 16px;
-      transition: 0.4s;
-    }
-
-    .ham{
-      width: 20px;
-      height: 3px;
-      background-color: #008FD3;
-      margin: 4px 0;
-      transition: 0.4s;
-    }
-
-    .ham :hover{
-      background-color: #F15F23;
-    }
-
-    /* Rotate first bar */
-    .change #ham-1 {
-        -webkit-transform: rotate(-45deg) translate(-4px, 5px);
-        transform: rotate(-45deg) translate(-4px, 5px);
-    }
-
-    /* Fade out the second bar */
-    .change #ham-2 {
-        -webkit-transform: translate(30px, 0px) scale(0.2, 1.4);
-        transform: ttranslate(30px, 0px) scale(0.2, 1.4);
-        opacity: 0;
-    }
-
-    /* Rotate last bar */
-    .change #ham-3 {
-        -webkit-transform: rotate(45deg) translate(-5px, -6px);
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    #search {
-      padding-right:10px;
-      position: absolute;
-      right: 50px;
-      left: initial;
-      top: 15px;
-      display: inline-block;
-      max-height: 30px;
-      cursor: pointer;
-    }
-
-    .dropbtn{
-      display: none;
-      transition: 0.4s;
-    }
-
-    #logo{
-      max-width: 30%;
-      transition: 0.4s;
-    }
-
-    #search input[type=text] {
-      width: 100%;
-    }
-
-    .button-nav{
-      font-family: 'Quicksand', Helvetica, sans-serif;
-      font-size: .8rem;
-      display: none;
-      padding: 0.25em 1.6em;
-      font-weight: 100;
-    }
-
-    #menuToggle{
-      text-decoration: none;
-      transition: 0.4s;
-      background-color: #FEFEFE;
-      padding-top: 0;
-    }
-
-    a{
-      color: #008FD3;
-    }
-
-    a:hover{
-      color: #F15F23;
-    }
-
-    a:hover, a:visited, a:active, a:link, a:focus{
-      text-decoration: none;
-      list-style-type: none;
-    }
-
-    #menu{
-      padding-left: 0;
-      line-height: 22px;
-    }
-
-    #menu li{
-      padding-left: 6%;
-    }
-
-    #menu .parent-nav {
-        font-size: .9rem;
-        
-    }  
-
-    #menu .child-nav{
-      font-size: .8rem;
-      font-weight: 100;
-      position: relative;
-      left: 10px;
-    }
-
-    .mobile-nav-section{
-      border-width: 0 0 0.5px 0;
-      border-style: solid;
-      border-color: #d6d6d6;
-    }
-
-    #mobile-nav-top{
-      border-width: 0.5px 0 0.5px 0;
-      border-style: solid;
-      border-color: #d6d6d6;
-    }
-
-    #contact input[type=text], textarea{
-      margin-bottom: .5rem;
-      width: 100%;
-    }
-    
-  }
-
-@media (max-width: 450px) {
-    #logo{
-      max-width: 8rem;
-    }
-}
-
-@media (max-width: 340px) {
-    #search{
-      top: 50px;
-    }
-
-    #hamburger{
-      top: 50px;
-    }
 }
