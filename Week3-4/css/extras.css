@@ -107,11 +107,13 @@ input[type=checkbox] {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+  border-radius: 4px;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  border-radius: 4px;
 }
 
 
