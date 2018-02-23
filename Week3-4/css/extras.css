@@ -17,7 +17,7 @@
 /* EVENT LIST  - From Andrew's Week 3 Lab Assignment */
 
 .event-list .event-container {
-  padding: 0.5rem;
+  padding: 2%;
   background-color: #ffffff;
   border-color: #d6d6d6;
   border-width: 1px;
@@ -34,7 +34,7 @@
 
 .map{
   width: 100%;
-  height: 15rem;
+  height: 250px;
 }
 
 
@@ -57,7 +57,7 @@ input[type=checkbox] {
 /* NAVIGATION - DROP-DOWN */
 
 .dropbtn{
-  background-color: none;
+  /*background-color: none;*/
 }
 
 .dropdown {
@@ -87,8 +87,8 @@ input[type=checkbox] {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 
