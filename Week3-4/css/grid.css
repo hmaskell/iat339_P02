@@ -30,7 +30,7 @@
 }
 
 [class^="grid-col-"] {
-	padding: 0 0.25rem;
+	/* padding: 0 0.25rem; */
 }
 
 
@@ -54,7 +54,7 @@ h2 {
 }
 
 section {
-	margin: 1rem 0;
+	/*margin: 1rem 0;*/
 }
 
 #quick-contact-special {
