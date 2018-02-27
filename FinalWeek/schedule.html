@@ -1,0 +1,439 @@
+<!--
+  IAT 339 with Prof. Andrew Hawryshkewich
+  D101 with Elgin-Skye McLaren
+  P02: Company
+
+  Josh Fernandez
+  Priscilla Skylar Lee
+  Heather Maskell
+
+  index.html
+
+  Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
+  Other references will be noted at appropriate sections of this file.
+
+  www.rdldodgeball.ca for content.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RDL - Season 8 Schedule</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/extras.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+  </head>
+
+  <body>
+
+    <!-- HEADER AND NAVIGATION SECTION -->
+
+    <section id="header" class="grid-row">
+
+      <div class="grid-col-header-title">
+        <a href="index.html">
+          <img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo">
+        </a>
+
+        <form method="post" action="#" id="search">
+          <label hidden for="form-search">Search:</label>
+          <input type="text" id="form-search" placeholder="Search">
+          <button class="icon"><i class="fa fa-search"></i></button>
+        </form>
+
+        <div id="hamburger" onclick="ham_menu(this)">
+          <div class="ham" id="ham-1"></div>
+          <div class="ham" id="ham-2"></div>
+          <div class="ham" id="ham-3"></div>
+        </div>
+      </div>
+
+      <nav class="grid-col-header-navbar grid-row" id="navbar">
+
+          <a href="news.html" class="button-nav">
+            Blog
+          </a>
+
+          <a href="registration.html" class="button-nav">
+            Registration
+          </a>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="schedule.html" class="button-nav">
+                Season 8
+              </a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="standings.html" class="button-nav">
+                  Standings
+                </a>
+            </div>
+          </div>
+
+          <a href="rules.html" class="button-nav">
+            Rules
+          </a>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="about.html" class="button-nav">
+                About
+              </a>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="executives.html" class="button-nav">
+                  Executives
+                </a>
+                <a href="contact.html" class="button-nav">
+                  Contact Us
+                </a>
+            </div>
+          </div>
+
+
+          <!-- FONT AWESOME search icon: https://fontawesome.com/how-to-use/svg-with-js -->
+
+          <div class="grid-col-header-navbar grid-row" id="menuToggle">
+            <input type="checkbox" />
+            <ul id="menu">
+              <div class="mobile-nav-section" id="mobile-nav-top">
+                <a class="parent-nav" href="index.html"><li>Home</li></a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="news.html"><li>Blog</li></a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="registration.html"><li>Registration</li></a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="schedule.html"><li>Season 8</li></a>
+                <a class="child-nav" href="standings.html"><li>Standings</li></a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="rules.html"><li>Rules</li></a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="about.html"><li>About</li></a>
+                <a class="child-nav" href="executives.html"><li>Executives</li></a>
+                <a class="child-nav" href="contact.html"><li>Contact Us</li></a>
+              </div>
+            </ul>
+          </div>
+
+
+      </nav>
+
+    </section>
+
+    <!-- FIRST BODY DIVISION -->
+
+    <div class="grid-row">
+
+      <!-- SEASON 8 TEAM SCHEDULE -->
+
+      <h2>Season 8 Team Schedule</h2>
+
+      <section id="schedule-content" class="grid-col-5of8">
+
+        <h3>Blundell Elementary School - Date</h3>
+        <!-- FIRST SCHEDULE ROW -->
+
+        <section id="blundell_map" class="grid-col-8of8 map">
+          <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
+        </section>
+
+        <section class="grid-col-8of8">
+          <table>
+              <tr>
+                <th>Court A</th>
+                <th>Court B</th>
+              </tr>
+              <tr>
+                <td>The Upside Down</td>
+                <td>5 Jerks and a Seaman</td>
+              </tr>
+              <tr>
+                <td>Eva's Emus</td>
+                <td>YAM BAM BAM</td>
+              </tr>
+              <tr>
+                <td>No Basketball</td>
+                <td>River Rats Dodgeball</td>
+              </tr>
+              <tr>
+                <td>Dodgy Style</td>
+                <td>Wonderbread VII — The Dodge Awakens</td>
+              </tr>
+              <tr>
+                <td>We Thought This Was Speed Dating</td>
+                <td>Corgi Lovers</td>
+              </tr>
+
+          </table>
+         </section>
+
+        <h3>Grauer Elementary School - Date</h3>
+        <!-- SECOND SCHEDULE ROW -->
+
+            <section id="grauer_map" class="grid-col-8of8 map">
+              <!-- GOOGLE MAPS API REFERENCE: https://developers.google.com/maps/ -->
+            </section>
+
+            <section class="grid-col-8of8">
+              <table>
+                <tr>
+                  <th>Court A</th>
+                  <th>Court B</th>
+                </tr>
+                <tr>
+                  <td>Maybe It’s Maybelline</td>
+                  <td>Daj Mabal</td>
+                </tr>
+                <tr>
+                  <td>MachoBear</td>
+                  <td>MMPR</td>
+                </tr>
+                <tr>
+                  <td>Zero Fox Given</td>
+                  <td>Dodgezillas</td>
+                </tr>
+                <tr>
+                  <td>Not In The Face</td>
+                  <td>Phoebe and Friends</td>
+                </tr>
+                <tr>
+                  <td>Bae</td>
+                  <td>Soju Bomb</td>
+                </tr>
+
+              </table>
+             </section>
+
+      </section>
+
+
+      <!-- EVENTS AND SCHEDULING -->
+
+      <section id="events-and-scheduling" class="grid-col-3of8">
+
+        <h2 class="h2-special">Events</h2>
+
+        <!-- TO DO: Make it an unordered list or have every item as a section -->
+        <div class="event-list">
+
+          <a href="news.html">
+            <div class="event-container">
+                <h4>Photo Week on Week 3</h4>
+                <p>
+                  Monday, February 5th at your gym
+                </p>
+            </div>
+          </a>
+
+          <a href="news.html">
+            <div class="event-container">
+              <h4>5-on-5 Dodgeball Tournament</h4>
+              <p>
+                on Friday, February 9th at Blundell Elementary School
+              </p>
+            </div>
+          </a>
+
+          <a href="news.html">
+            <div class="event-container">
+              <h4>Appreciation Banquet</h4>
+              <p>
+                Saturday, March 24th at Tin Tin Seafood Harbour
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+        <h2 class="h2-special">Schedule</h2>
+
+        <!-- TO DO: Make it an unordered list or have every item as a section -->
+        <div class="event-list">
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 1</h4>
+            <p>January 15th</p>
+
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 2</h4>
+            <p>January 22nd</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 3</h4>
+            <p>January 29th</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 4</h4>
+            <p>February 5th</p>
+          </div>
+        </a>
+
+        <a href="schedule.html">
+          <div class="event-container">
+            <h4>Week 5</h4>
+            <p>February 19</p>
+          </div>
+        </a>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- SECOND BODY DIVISION -->
+
+    <div class="grid-row">
+
+      <!-- QUICK CONTACT LINK -->
+
+      <section id="quick-contact" class="grid-col-8of8">
+
+        <h2>Questions or Concerns?</h2>
+
+        <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
+        <p>
+          We'd love the opportunity to answer any questions,</br>and hear any feedback you may have!</br>
+          <a href="mailto:info@rdldodgeball.ca" class="button" class="button">
+            Shoot us an email!
+          </a>
+        </p>
+
+      </section>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="grid-row" id="footer">
+
+      <!-- SOCIAL MEDIA INFO AND LINKS -->
+
+      <div id="socialmedia" class="grid-col-4of8">
+
+
+            <!-- REFERENCE: FACEBOOK ICON FROM
+            https://iconmonstr.com/facebook-4-svg/ -->
+            <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
+              <img class="socialmedia-icon" id="fb" src="img/social_media/facebook2.png">
+            </a>
+
+          <!-- REFERENCE: TWITTER ICON FROM
+          https://iconmonstr.com/twitter-4-svg/ -->
+          <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
+            <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter2.png">
+          </a>
+
+          <!-- REFERENCE: Instagram ICON FROM
+          https://iconmonstr.com/instagram-4-svg/ -->
+          <a class="socialmedia-links" href="https://www.instagram.com/rdldodgeball/" target="_blank" alt="Follow us on Instagram">
+            <img class="socialmedia-icon" id="ig"
+            src="img/social_media/instagram.png">
+          </a>
+
+      </div>
+
+      <!-- COPYRIGHT -->
+
+      <div id="copyright" class="grid-col-4of8">
+
+        <p>
+          Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+    "use strict";
+
+      window.onresize = setMenu;
+      var menu = document.getElementById('menuToggle');
+      menu.style.display = 'none';
+
+      /* inspired by https://only.beaverjunction.com/animated-hamburger-icon-for-the-beaver-builder-theme/ */
+        function ham_menu(x) {
+            x.classList.toggle("change");
+            if (menu.style.display == null || menu.style.display == 'none'){
+              menu.style.display = 'block';
+            }
+            else {
+              menu.style.display = 'none';
+            }
+        }
+
+        function setMenu() {
+          if ((window.innerWidth > 776) && (menu.style.display == "block")){
+            menu.style.display = "none";
+            var x = document.getElementById('hamburger');
+            x.classList.toggle("change");
+          }
+        }
+
+      function initMap() {
+        var blundell_elem = {lat: 49.155, lng: -123.151};
+        var grauer_elem = {lat: 49.155, lng: -123.174};
+        var blundell_map = new google.maps.Map(document.getElementById('blundell_map'), {
+          zoom: 12,
+          center: blundell_elem
+        });
+        var marker = new google.maps.Marker({
+          position: blundell_elem,
+          map: blundell_map
+        });
+
+        var grauer_map = new google.maps.Map(document.getElementById('grauer_map'), {
+          zoom: 12,
+          center: grauer_elem
+        });
+        var marker = new google.maps.Marker({
+          position: grauer_elem,
+          map: grauer_map
+        });
+      }
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxcqNU5NhVMz1wLirvRiuZeReo_9D8nSg&callback=initMap">
+    </script>
+
+  </body>
+</html>
