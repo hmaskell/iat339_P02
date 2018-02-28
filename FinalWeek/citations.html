@@ -23,7 +23,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RDL - Home</title>
+    <title>RDL - Citations</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -34,7 +34,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
+    <script type="text/javascript" src="js/hamburger.js"></script>
 
 
   </head>
@@ -43,7 +43,7 @@
 
     <!-- HEADER AND NAVIGATION SECTION -->
 
-    <section id="header" class="grid-row">
+    <header class="grid-row">
 
       <div class="grid-col-header-title">
         <a href="index.html">
@@ -87,7 +87,7 @@
             </div>
           </div>
 
-          <a href="rules.html" class="button-nav">
+          <a href="rules.html" class="button-nav afterdropdown">
             Rules
           </a>
 
@@ -141,142 +141,33 @@
 
       </nav>
 
-    </section>
+    </header>
 
     <!-- FIRST BODY DIVISION -->
 
-    <div class="grid-row">
+    <div class="grid-row" id="citations">
+      <div id="grid-col-5of8">
+        <h2>Citations</h2>
 
-      <!-- CURRENT CONTENT -->
+        <h3>Icons</h3>
+        <a href="https://fonts.googleapis.com/css?family=Quicksand">Quicksand Font from Google APIs</a>
+        <a href="https://use.fontawesome.com/releases/v5.0.6/js/all.js">FontAwesome Search Icon</a>
+        <a href="https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-caret-down">Dropdown Menu</a>
+        <a href="https://iconmonstr.com/facebook-4-svg/">Facebook Icon</a>
+        <a href="https://iconmonstr.com/twitter-4-svg/">Twitter Icon</a>
+        <a href="https://iconmonstr.com/instagram-4-svg/">Instagram Icon</a>
 
-      <h2>Richmond Dodgeball League</h2>
+        <h3>Code Snippet Inspiration</h3>
 
-      <section id="current-content" class="grid-col-5of8">
+        <h3>Content</h3>
+        <a href="http://rdldodgeball.ca">Richmond Dodgeball League</a>
+        <a href="">PSL Photography</a>
 
-
-
-        <!-- TO DO: Title and sub-title to represent the news or story behind each picture -->
-        <figure>
-          <img src="img/main_image.jpg" alt="A team of enthusiastic dodgeball players">
-          <figcaption>
-            McDodgin's ready for Season 8!
-          </figcaption>
-          <p>
-            Season 8 has begun! Photo week is on Week 3, so make sure you have your team jerseys all ready! If your team needs a retake, please email us at <a href="mailto:plee@rdldodgeball.ca">plee&#64;rdldodgeball.ca</a>.
-          </p>
-
-        </figure>
-
-      </section>
-
-
-      <!-- EVENTS AND SCHEDULING -->
-
-      <section id="events-and-scheduling" class="grid-col-3of8">
-
-        <h2 class="h2-special">Events</h2>
-
-        <!-- TO DO: Make it an unordered list or have every item as a section -->
-        <div class="event-list">
-
-          <a href="news.html">
-            <div class="event-container">
-                <h4>Photo Week on Week 3</h4>
-                <p>
-                  Monday, February 5th at your gym
-                </p>
-            </div>
-          </a>
-
-          <a href="news.html">
-            <div class="event-container">
-              <h4>5-on-5 Dodgeball Tournament</h4>
-              <p>
-                on Friday, February 9th at Blundell Elementary School
-              </p>
-            </div>
-          </a>
-
-          <a href="news.html">
-            <div class="event-container">
-              <h4>Appreciation Banquet</h4>
-              <p>
-                Saturday, March 24th at Tin Tin Seafood Harbour
-              </p>
-            </div>
-          </a>
-
-        </div>
-
-        <h2 class="h2-special">Schedule</h2>
-
-        <!-- TO DO: Make it an unordered list or have every item as a section -->
-        <div class="event-list">
-
-        <a href="schedule.html">
-          <div class="event-container">
-            <h4>Week 1</h4>
-            <p>January 15th</p>
-
-          </div>
-        </a>
-
-        <a href="schedule.html">
-          <div class="event-container">
-            <h4>Week 2</h4>
-            <p>January 22nd</p>
-          </div>
-        </a>
-
-        <a href="schedule.html">
-          <div class="event-container">
-            <h4>Week 3</h4>
-            <p>January 29th</p>
-          </div>
-        </a>
-
-        <a href="schedule.html">
-          <div class="event-container">
-            <h4>Week 4</h4>
-            <p>February 5th</p>
-          </div>
-        </a>
-
-        <a href="schedule.html">
-          <div class="event-container">
-            <h4>Week 5</h4>
-            <p>February 19</p>
-          </div>
-        </a>
-
-        </div>
-
-      </section>
-
+      </div>
     </div>
 
-    <!-- SECOND BODY DIVISION -->
 
-    <div class="grid-row">
-
-      <!-- QUICK CONTACT LINK -->
-
-      <section id="quick-contact" class="grid-col-8of8">
-
-        <h2>Questions or Concerns?</h2>
-
-        <!-- TO DO: What is the "EMAIL" button? A button item or a div item? -->
-        <p>
-          We'd love the opportunity to answer any questions,</br>and hear any feedback you may have!</br>
-          <a href="mailto:info@rdldodgeball.ca" class="button" class="button">
-            Shoot us an email!
-          </a>
-        </p>
-
-      </section>
-
-    </div>
-
+      
     <!-- FOOTER -->
 
     <div class="grid-row" id="footer">
@@ -309,45 +200,25 @@
 
 
       <!-- COPYRIGHT -->
+      <div id="footer-text" class="grid-col-4of8">
+        <div id="footer-links" >
+          <a href="styleguide.html">Styleguide</a>
+          <a href="https://github.com/hmaskell/iat339_P02">Git Repo</a>
+          <a href="citations.html">Citations</a>
+        </div>
 
-      <div id="copyright" class="grid-col-4of8">
+        <div id="copyright">
 
-        <p>
-          Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
-        </p>
+          <p>
+            Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+          </p>
 
+        </div>
       </div>
 
     </div>
 
-    <script type="text/javascript">
-
-    "use strict";
-
-      window.onresize = setMenu;
-      var menu = document.getElementById('menuToggle');
-      menu.style.display = 'none';
-
-      /* inspired by https://only.beaverjunction.com/animated-hamburger-icon-for-the-beaver-builder-theme/ */
-        function ham_menu(x) {
-            x.classList.toggle("change");
-            if (menu.style.display == null || menu.style.display == 'none'){
-              menu.style.display = 'block';
-            }
-            else {
-              menu.style.display = 'none';
-            }
-        }
-
-        function setMenu() {
-          if ((window.innerWidth > 776) && (menu.style.display == "block")){
-            menu.style.display = "none";
-            var x = document.getElementById('hamburger');
-            x.classList.toggle("change");
-          }
-        }
-    </script>
-
+    <script type="text/javascript" src="js/hamburger.js"></script>
 
   </body>
 
