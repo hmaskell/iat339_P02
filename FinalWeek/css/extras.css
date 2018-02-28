@@ -120,15 +120,32 @@ input[type=checkbox] {
 /* MEDIA QUERIES FOR THE DROP-DOWN MENU */
 
 @media (max-width: 1024px){
-  #search {
-      position: relative;
-      left: 83%;
-      top: 50px;
+
+  .button-nav {
+      
+  }
+
+  .afterdropdown {
+      
+  }
+
+  .dropbtn .button-nav{
+    padding-right: 0;
   }
 
   #menuToggle{
     display: none;
   }
+
+  #logo{
+    max-width: 30%;
+  }
+
+
+  #navbar{
+   
+  }
+
 }
 
 @media (max-width: 776px){
@@ -153,7 +170,7 @@ input[type=checkbox] {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 16px;
+    top: 18px;
     transition: 0.4s;
   }
 
@@ -219,6 +236,11 @@ input[type=checkbox] {
     display: none;
     padding: 0.25em 1.6em;
     font-weight: 100;
+  }
+
+
+  .dropbtn .button-nav{
+    padding-right: 0;
   }
 
   #menuToggle{
