@@ -34,7 +34,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
+    <script type="text/javascript" src="js/hamburger.js"></script>
 
 
   </head>
@@ -43,7 +43,7 @@
 
     <!-- HEADER AND NAVIGATION SECTION -->
 
-    <section id="header" class="grid-row">
+    <header class="grid-row">
 
       <div class="grid-col-header-title">
         <a href="index.html">
@@ -87,7 +87,7 @@
             </div>
           </div>
 
-          <a href="rules.html" class="button-nav">
+          <a href="rules.html" class="button-nav afterdropdown">
             Rules
           </a>
 
@@ -141,7 +141,7 @@
 
       </nav>
 
-    </section>
+    </header>
 
     <!-- FIRST BODY DIVISION -->
 
@@ -308,45 +308,25 @@
 
 
       <!-- COPYRIGHT -->
+      <div id="footer-text" class="grid-col-4of8">
+        <div id="footer-links" >
+          <a href="styleguide.html">Styleguide</a>
+          <a href="https://github.com/hmaskell/iat339_P02">Git Repo</a>
+          <a href="citations.html">Citations</a>
+        </div>
 
-      <div id="copyright" class="grid-col-4of8">
+        <div id="copyright">
 
-        <p>
-          Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
-        </p>
+          <p>
+            Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+          </p>
 
+        </div>
       </div>
 
     </div>
 
-    <script type="text/javascript">
-
-    "use strict";
-
-      window.onresize = setMenu;
-      var menu = document.getElementById('menuToggle');
-      menu.style.display = 'none';
-
-      /* inspired by https://only.beaverjunction.com/animated-hamburger-icon-for-the-beaver-builder-theme/ */
-        function ham_menu(x) {
-            x.classList.toggle("change");
-            if (menu.style.display == null || menu.style.display == 'none'){
-              menu.style.display = 'block';
-            }
-            else {
-              menu.style.display = 'none';
-            }
-        }
-
-        function setMenu() {
-          if ((window.innerWidth > 776) && (menu.style.display == "block")){
-            menu.style.display = "none";
-            var x = document.getElementById('hamburger');
-            x.classList.toggle("change");
-          }
-        }
-    </script>
-
+    <script type="text/javascript" src="js/hamburger.js"></script>
 
   </body>
 
