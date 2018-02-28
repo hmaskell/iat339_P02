@@ -169,9 +169,15 @@ figcaption {
 .socialmedia-icon{
   width: 2.5rem;
   margin: 1.2rem .5rem 0 .5rem;
+  opacity: 0.5;
 }
 
-/* Align items centre if below the breakpoint where the grid-col splits ( I don't know what px this is.. I'm using 1024px as a guesstimate) 
+.socialmedia-icon:hover{
+  transition: opacity 0.4s ease-out;
+  opacity: 0.75;
+}
+
+/* Align items centre if below the breakpoint where the grid-col splits ( I don't know what px this is.. I'm using 1024px as a guesstimate)
 >>I think the issue is with p max Width being 40px.
 
 @media (max-width: 1024px){
