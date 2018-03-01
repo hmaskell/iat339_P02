@@ -88,11 +88,20 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  margin: .5rem 0 .75rem 0;
+  margin: 0 0 .75rem 0;
 }
 
+#blog-top{
+  margin: 0 0 .75rem 0;
+}
+
+.blog h3{
+  margin: 1.25rem 0 1rem 0;
+}
+
+
 .rules h3{
-  margin: 1rem 0 .75rem 0;
+  margin: 1.25rem 0 .75rem 0;
 }
 
 h4 {
@@ -142,6 +151,10 @@ ol li, ul li {
   margin: 0.25rem 0;
 }
 
+.blog p{
+  margin-bottom: 1.25rem;
+}
+
 #quick-contact p{
   margin-top: 2rem;
 }
@@ -181,8 +194,18 @@ figure {
   margin: 0 0 1rem 0;
 }
 
+.blog figure:nth-of-type(1){
+  margin: 0 0 1.25rem 0;
+  border: 0;
+}
+
+.blog figure{
+  margin: 0 0 1.25rem 0;
+  border-top: .1rem solid black;
+}
+
 .rules figure{
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   border-top: .1rem solid black;
 }
 
