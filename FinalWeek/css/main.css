@@ -384,15 +384,15 @@ form textarea::placeholder {
 }
 
 #search {
-    /* max-height: 10px; */
     position: absolute;
     right: 0.5rem;
-    top: 2rem;
+    top: 1.8rem;
     transition: 0.4s;
 }
 
 #search input {
   width: 80%;
+  font-size:.8rem;
 }
 
 #contact {
@@ -412,10 +412,6 @@ form textarea::placeholder {
 
 .dropbtn .button-nav{
   padding-right: .1rem;
-}
-
-.afterdropdown {
-    padding-left: 3.2em;
 }
 
 .button-nav:hover, .button-nav:focus {
