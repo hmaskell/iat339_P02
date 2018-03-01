@@ -163,8 +163,8 @@ article {
   FONT ELEMENTS -------------------
 */
 
-.fonts {
-  margin-left: 1rem;
+#fonts section {
+  margin-bottom: 1rem;
 }
 
 /*
@@ -192,22 +192,14 @@ button:active, button:hover, button:focus {
   transition: background-color 0.4s ease-out;
 }
 
-.button-sub {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.5rem;
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #008FD3;
-  border-radius: 0.25em;
-  text-decoration: none;
+#search-initial {
+    right: 0.5rem;
+    top: 2rem;
+    transition: 0.4s;
 }
 
-.button-sub:hover, .button-sub:focus {
-  background-color: #43ade0;
-  color:#FFF;
-  transition: all .5s;
-  text-decoration: none;
+#search-initial input {
+  width: 100%;
 }
 
 /*
