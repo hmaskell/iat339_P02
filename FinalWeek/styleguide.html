@@ -730,20 +730,19 @@
           <div class="grid-col-4of8">
 
             <h4>CSS selector:</h4>
-            <p>.wrapper, .one, .two, .three, .four, .five, .six, .seven</p>
+            <p>header, .current-content, .events-and-scheduling, .quick-contact, .socialmedia, .footer-text</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;div class="wrapper"&gt;
-              &lt;div class="one"&gt;Header and Nav Section&lt;/div&gt;
-              &lt;div class="two"&gt;Current Content (Photo w/ text overlay)&lt;/div&gt;
-              &lt;div class="three"&gt;Events & Scheduling&lt;/div&gt;
-              &lt;div class="four"&gt;Quick Contact Link&lt;/div&gt;
-              &lt;div class="five"&gt;Social Media 1&lt;/div&gt;
-              &lt;div class="six"&gt;Social Media 2&lt;/div&gt;
-              &lt;div class="seven"&gt;Copyright Info&lt;/div&gt;
-              </code>
-            </pre>
+            <code>
+              &lt;div class="wrapper"&gt;<br />
+                &emsp;&lt;header&gt;Header and Nav Section&lt;/header&gt;<br />
+                &emsp;&lt;div class="current-content"&gt;Current Content&lt;/div&gt;<br />
+                &emsp;&lt;div class="events-and-scheduling"&gt;Events & Scheduling&lt;/div&gt;<br />
+                &emsp;&lt;div class="quick-contact"&gt;Quick Contact Link&lt;/div&gt;<br />
+                &emsp;&lt;footer class="socialmedia"&gt;Social Media&lt;/div&gt;<br />
+                &emsp;&lt;footer class="footer-text"&gt;Copyright Info&lt;/div&gt;<br />
+              &lt;/div&gt;
+            </code>
 
           </div>
 
@@ -751,13 +750,40 @@
 
             <h4>Rendered element:</h4>
             <div class="wrapper">
-            <div class="one">Header & Nav Section</div>
-            <div class="two">Current Content (Photo w/ text overlay)</div>
-            <div class="three">Events & Scheduling</div>
-            <div class="four">Quick Contact Link</div>
-            <div class="five">Social Media 1</div>
-            <div class="six">Social Media 2</div>
-            <div class="seven">Copyright Info</div>
+              <div class="grid-row">
+
+                <div class="grid-col-8of8">
+                  <div class="wrapper-header-nav">Header & Nav Section</div>
+                </div>
+
+              </div>
+
+              <div class="grid-row">
+                <div class="grid-col-5of8">
+                  <div class="wrapper-current-content">Current Content</div>
+                </div>
+                <div class="grid-col-3of8">
+                  <div class="wrapper-events-scheduling">Events & Scheduling</div>
+                </div>
+              </div>
+
+              <div class="grid-row">
+
+                <div class="grid-col-8of8">
+                  <div class="wrapper-quick-contact">Quick Contact Link</div>
+                </div>
+
+              </div>
+
+              <div class="grid-row">
+                <div class="grid-col-4of8">
+                  <div class="wrapper-social-media">Social Media</div>
+                </div>
+                <div class="grid-col-4of8">
+                  <div class="wrapper-copyright">Copyright Info</div>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -783,6 +809,56 @@
 
       </div>
     </section>
+
+    <!-- FOOTER -->
+
+    <div class="grid-row" id="footer">
+
+      <!-- SOCIAL MEDIA INFO AND LINKS -->
+
+      <div id="socialmedia" class="grid-col-4of8">
+
+
+            <!-- REFERENCE: FACEBOOK ICON FROM
+            https://iconmonstr.com/facebook-4-svg/ -->
+            <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
+              <img class="socialmedia-icon" id="fb" src="img/social_media/facebook2.png">
+            </a>
+
+          <!-- REFERENCE: TWITTER ICON FROM
+          https://iconmonstr.com/twitter-4-svg/ -->
+          <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
+            <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter2.png">
+          </a>
+
+          <!-- REFERENCE: Instagram ICON FROM
+          https://iconmonstr.com/instagram-4-svg/ -->
+          <a class="socialmedia-links" href="https://www.instagram.com/rdldodgeball/" target="_blank" alt="Follow us on Instagram">
+            <img class="socialmedia-icon" id="ig"
+            src="img/social_media/instagram.png">
+          </a>
+
+      </div>
+
+
+      <!-- COPYRIGHT -->
+      <div id="footer-text" class="grid-col-4of8">
+        <div id="footer-links" >
+          <a href="styleguide.html">Styleguide</a>
+          <a href="https://github.com/hmaskell/iat339_P02">Git Repo</a>
+          <a href="citations.html">Citations</a>
+        </div>
+
+        <div id="copyright">
+
+          <p>
+            Copyright © 2018 Priscilla Skylar Lee, Josh Fernandez, and Heather Maskell for Richmond Dodgeball League. All rights reserved.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
 
     <script type="text/javascript" src="js/hamburger.js"></script>
 
