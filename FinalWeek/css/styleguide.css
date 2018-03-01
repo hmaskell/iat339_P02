@@ -43,6 +43,11 @@ section code {
   margin-bottom: 3rem;
 }
 
+.colours code {
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0 1rem 0;
+}
+
 /* section a {
   margin-left: 1rem;
   font-size: 1.25rem;
@@ -57,26 +62,12 @@ article {
 /*
   COLOUR PALETTE ELEMENTS -------------------
 */
-.colours {
-  margin-bottom: 35rem;
-}
-
-@media(min-width: 65.5rem){
-  .colours {
-    margin-bottom: 19rem;
-  }
-}
-
-@media(max-width: 35rem){
-  .colours{
-    margin-bottom: 65rem;
-  }
+.colours [class^="grid-col-"] {
+	padding: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @media(max-width: 560px){
-  .colours{
-    width: 100%;
-  }
 
   section{
     padding-left: 1.5rem;
@@ -109,9 +100,11 @@ article {
 
 .swatch {
   height:10rem;
-  width:10rem;
-  padding: .5rem .5rem;
-  display:block;
+  width:100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* padding: .5rem .5rem; */
+  display: block;
   -webkit-transition: background-color 0.5s; /* Safari */
   transition: background-color 0.5s;
 }
