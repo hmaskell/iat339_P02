@@ -223,12 +223,13 @@ a:active, a:hover, a:focus{
   transition: color 0.4s ease-out;
 }
 
-.button {
+button, .button {
   display: inline-block;
   background-color: #008FD3;
   color: white!important;
   font-family: 'Quicksand', Helvetica, sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5rem 0.6rem;
@@ -237,7 +238,12 @@ a:active, a:hover, a:focus{
   border-radius: .3rem;
 }
 
-.button:active, .button:hover, .button:focus {
+button {
+  border: 0;
+}
+
+.button:active, .button:hover, .button:focus,
+button:active, button:hover, button:focus {
   background-color: #43ADE0;
   transition: background-color 0.4s ease-out;
 }
