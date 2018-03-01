@@ -88,6 +88,11 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  margin: .5rem 0 .75rem 0;
+}
+
+.rules h3{
+  margin: 1rem 0 .75rem 0;
 }
 
 h4 {
@@ -174,6 +179,11 @@ img {
 
 figure {
   margin: 0 0 1rem 0;
+}
+
+.rules figure{
+  margin: 0 0 1rem 0;
+  border-top: .1rem solid black;
 }
 
 figcaption {
@@ -357,14 +367,13 @@ textarea {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
-  margin-bottom: 0.25rem;
-  transition: background-color 0.4s ease-out;
+  margin: .5rem 0 1rem 0;
+  transition: opacity 0.3s ease-out;
 }
 
 .nav2-item:hover, .nav2-item:focus, .nav2-item:active {
-  background-color: #EF7362;
+  opacity: .75;
   color: white;
-  transition: background-color 0.4s ease-out;
 }
 
 .nav2-item a:active{
