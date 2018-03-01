@@ -218,14 +218,6 @@ button:active, button:hover, button:focus {
   TEXT ELEMENTS -------------------
 */
 
-section pre code {
-  background-color: #eee;
-  display: block;
-  white-space: pre-line;
-  padding: 1rem 1.5rem;
-  line-height: 1.5rem;
-}
-
 li {
   padding-bottom: .5rem;
 }
