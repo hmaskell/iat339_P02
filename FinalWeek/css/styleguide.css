@@ -40,10 +40,10 @@ section code {
   display: block;
   padding: 1rem 1.5rem;
   line-height: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.colours code {
+#colours code {
   padding: 0.75rem 1rem;
   margin: 0.25rem 0 1rem 0;
 }
@@ -62,7 +62,7 @@ article {
 /*
   COLOUR PALETTE ELEMENTS -------------------
 */
-.colours [class^="grid-col-"] {
+#colours .grid-row [class^="grid-col-"] {
 	padding: 0 0.5rem;
   margin-bottom: 1rem;
 }
@@ -146,17 +146,6 @@ article {
   text-align: center;
   display: block;
   margin-top: .3rem;
-}
-
-.colours li {
-  list-style: none;
-  float:left;
-  margin: 1rem;
-  border: .1rem solid #000000;
-  padding: .5rem;
-  background: #FFFFFF;
-  border-radius: .5rem;
-  display: block;
 }
 
 /*
@@ -266,66 +255,57 @@ section#userflow img {
   height: auto;
 }
 
+/* WEBSITE GRID STRUCTURE */
+
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-gap: 15px;
-  grid-auto-rows: minmax(100px, auto);
+  display: block;
+  margin: 1rem;
+  /* grid-template-columns: repeat(5, 2fr); */
+  /* grid-gap: 15px; */
+  /* grid-auto-rows: minmax(100px, auto); */
 }
-.one {
-  grid-column: 1 / 6;
-  grid-row: 1;
-  background-color: #333333;
-  padding: 2.5rem;
-  color: #FFF;
-  text-align: center;
-}
-.two {
-  grid-column: 1 / 4;
-  grid-row: 2 / 4;
-  background-color: #008FD3;
-  padding: 5rem;
-  color: #FFF;
-  text-align: center;
-}
-.three {
-  grid-column: 4 / 6;
-  grid-row: 2 / 4;
-  background-color: #F15F23;
-  padding: 5rem;
-  color: #FFF;
-  text-align: center;
-}
-.four {
-  grid-column: 1 / 6;
-  grid-row: 4;
-  background-color: #333333;
-  padding: 2.5rem;
-  color: #FFF;
-  text-align: center;
-}
-.five {
-  grid-column: 1 / 2;
-  grid-row: 5;
-  background-color: #F15F23;
-  padding: 5rem;
-  color: #FFF;
-  text-align: center;
-}
-.six {
-  grid-column: 2 / 4;
-  grid-row: 5;
-  background-color: #008FD3;
-  padding: 5rem;
+
+[class^="wrapper-"] {
+  /* display: block; */
   color: #FFF;
   text-align: center;
 }
 
-.seven{
-  grid-column: 4 / 6;
-  grid-row: 5;
+.wrapper-header-nav {
   background-color: #333333;
-  padding: 5rem;
-  color: #FFF;
-  text-align: center;
+  padding: 2.5rem;
+}
+
+.wrapper-current-content {
+  background-color: #008FD3;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper-events-scheduling {
+  background-color: #F15F23;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper-quick-contact {
+  background-color: #333333;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.wrapper-social-media {
+  background-color: #F15F23;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.wrapper-copyright {
+  background-color: #008FD3;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#site_map {
+  margin-bottom: 3rem;
 }
