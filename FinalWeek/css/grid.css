@@ -68,7 +68,7 @@ section {
 
 #quick-contact p,
 #quick-contact-special p {
-	max-width: none;
+	max-width: 30%;
 }
 
 #quick-contact-special h2, #quick-contact-special p, #quick-contact-special a {

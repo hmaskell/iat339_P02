@@ -174,7 +174,8 @@ ol li, ul li {
 }
 
 #quick-contact p{
-  margin-top: 2rem;
+  max-width: 30%;
+  margin: 1.5rem auto;
 }
 
 /*************
@@ -275,7 +276,7 @@ a:active, a:hover, a:focus{
 }
 
 .button {
-  display: inline-block;
+  display: block;
   background-color: #008FD3;
   color: white!important;
   font-family: 'Quicksand', Helvetica, sans-serif;
