@@ -70,12 +70,14 @@ input[type=checkbox] {
 
 /* Dropdown button */
 .dropdown .dropbtn {
+  cursor: pointer;
   border: none;
   outline: none;
   color: #008FD3;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  font-weight: bold;
 }
 
 /* Dropdown content (hidden by default) */
