@@ -48,6 +48,19 @@ header{
   padding: 2rem 0;
 }
 
+#citations a{
+    display: block;
+    padding: 0 0 1.5rem;
+}
+
+#citations h3{
+    padding: 1.5rem 0 1rem;
+}
+
+#citations{
+  margin-bottom: 1rem;
+}
+
 /* HEADERS */
 
 h1, h2, h3, h4 {
