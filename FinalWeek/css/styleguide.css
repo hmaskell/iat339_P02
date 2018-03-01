@@ -13,6 +13,14 @@
   Other references will be noted at appropriate sections of this file.
 */
 
+section {
+  padding: 0 0.5rem;
+}
+
+/* section p {
+  border-top: 1px solid #212121;
+}  */
+
 /* body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
@@ -217,6 +225,27 @@ article {
 /*
   INTERACTIVE ELEMENTS -------------------
 */
+
+button {
+  display: inline-block;
+  background-color: #008FD3;
+  color: white;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.6rem;
+  margin: 0.25rem 0.125rem;
+  transition: background-color 0.5s ease-out;
+  border-radius: .3rem;
+  border: 0;
+}
+
+button:active, button:hover, button:focus {
+  background-color: #43ADE0;
+  transition: background-color 0.4s ease-out;
+}
 
 /* Styling for the navigation button */
 /* .button-nav {
