@@ -193,11 +193,11 @@
 
             <h4>Sample code:</h4>
             <code>
-              &lt;a href="#" class="button-nav"&gt;DEFAULT BUTTON&lt;/a&gt;
+              &lt;a href="#" class="button-nav"&gt;Default Navigation Button&lt;/a&gt;
             </code>
 
             <h4>Rendered element:</h4>
-            <a class="button-nav" href="#">DEFAULT BUTTON</a>
+            <a class="button-nav" href="#">Default Navigation Button</a>
 
           </article>
 
@@ -596,28 +596,32 @@
           <article>
 
             <h4>CSS selector:</h4>
-            <p>section#form input, section#form textarea, section#form .button-sub</p>
+            <p>form, .form-name, .form-email, .form-message, .submit, .button</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;p&gt;Your Name&lt;/p&gt;
-              &lt;input type='text' name='name'/&gt;
-              &lt;p&gt;Your Email Address&lt;/p&gt;
-              &lt;input type='text' name='email'/&gt;
-              &lt;p&gt;Your Message&lt;/p&gt;
-              &lt;textarea style='height: 2rem;' name='message'&gt;&lt;/textarea&gt;
-              &lt;input type='submit' class='button-sub' value='Send Message'&gt;
-              </code>
-            </pre>
+            <code>
+              &lt;form method="post" action="#" id="contact"&gt;<br />
+                &emsp;&lt;label for="form-name"&gt;Name:&lt;/label&gt;<br />
+                &emsp;&lt;input type="text" id="form-name" placeholder="Enter your name here."&gt;<br />
+                &emsp;&lt;label for="form-email"&gt;Your Email Address:&lt;/label&gt;<br />
+                &emsp;&lt;input type="text" id="form-email" placeholder="Enter your email address here."&gt;<br />
+                &emsp;&lt;label for="form-message"&gt;Your Message:&lt;/label&gt;<br />
+                &emsp;&lt;textarea id="form-message" placeholder="Please place your message here."&gt;&lt;/textarea&gt;<br />
+                &emsp;&lt;input type="submit" class="button" value="Send Message"&gt;<br />
+              &lt;/form&gt;
+            </code>
 
             <h4>Rendered element:</h4>
-            <p>Your Name</p>
-            <input type='text' name='name'/>
-            <p>Your Email Address</p>
-            <input type='text' name='email'/>
-            <p>Your Message</p>
-            <textarea style='height: 2rem;' name='message'></textarea>
-            <input type='submit' class='button-sub' value='Send Message'>
+            <form method="post" action="#" id="contact">
+              <label for="form-name">Name:</label>
+              <input type="text" id="form-name" placeholder="Enter your name here.">
+              <label for="form-email">Your Email Address:</label>
+              <input type="text" id="form-email" placeholder="Enter your email address here.">
+              <label for="form-message">Your Message:</label>
+              <textarea id="form-message" placeholder="Please place your message here."></textarea>
+              <input type="submit" class="button" value="Send Message">
+            </form>
+
           </article>
 
         </section>
