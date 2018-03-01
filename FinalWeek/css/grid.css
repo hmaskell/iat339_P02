@@ -162,6 +162,22 @@ section {
 	flex-basis: 50%;
 }
 
+[class^="grid-col-schedule"] {
+	flex-basis: 50%;
+	padding: 0 0.25rem;
+}
+
+.grid-col-schedule-date {
+	font-weight: normal;
+	text-align: right;
+	padding: 0.25rem 0;
+}
+
+.grid-col-schedule-date p {
+	margin: 0;
+}
+
+
 /* MODULES */
 
 
@@ -234,7 +250,7 @@ section {
 		flex-basis: 100%;
 	}
 
-	[class^="grid-col-socialmedia"] {
+	[class^="grid-col-socialmedia"], [class^="grid-col-schedule"] {
 		flex-basis: 50%;
 	}
 
@@ -244,6 +260,10 @@ section {
 
 	[class^="grid-col-"] {
 		flex-basis: 100%;
+	}
+
+	[class^="grid-col-schedule"] {
+		flex-basis: 50%;
 	}
 
 }
