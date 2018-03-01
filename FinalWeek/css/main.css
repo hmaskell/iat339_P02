@@ -152,6 +152,17 @@ p, ol, ul {
   font-weight: normal;
 }
 
+@media (min-width: 1120px){
+  .exec p{
+    padding-left:1rem;
+  }
+
+  .about p{
+    padding-left:1rem;
+  }
+}
+
+
 p {
   line-height: 1.5rem;
   padding-right: .5rem;
