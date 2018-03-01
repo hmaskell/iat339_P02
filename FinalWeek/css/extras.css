@@ -170,7 +170,7 @@ input[type=checkbox] {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 18px;
+    top: 28px;
     transition: 0.4s;
   }
 
