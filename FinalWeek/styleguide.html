@@ -184,8 +184,6 @@
         <div class="grid-col-2of8">
           <section class="sub-section" id="navigation">
 
-          <!-- Change ".button-nav" to ".nav-item" -->
-
           <h3>Navigation Button</h3>
 
           <article>
@@ -267,7 +265,7 @@
           <article>
 
             <h4>CSS selector:</h4>
-            <p>form-search</p>
+            <p>form, .form-search</p>
 
             <h4>Sample code:</h4>
             <code>
@@ -342,8 +340,8 @@
 
             <h4>Sample code:</h4>
             <code>
-              &lt;p&gt;
-                The Richmond Dodgeball League was founded in the Fall of 2010 as an extension of the Vancouver Dodgeball League. What started as an 8 team league has blossomed into an organization that now hosts 30 teams and over 250 players.
+              &lt;p&gt;<br />
+                &emsp;The Richmond Dodgeball League was founded in the Fall of 2010 as an extension of the Vancouver Dodgeball League. What started as an 8 team league has blossomed into an organization that now hosts 30 teams and over 250 players.<br />
               &lt;/p&gt;
             </code>
 
@@ -368,15 +366,13 @@
             <p>ul</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>
-                &lt;ul&gt;
-                  &lt;li&gt;One bullet&lt;/li&gt;
-                  &lt;li&gt;Two bullets&lt;/li&gt;
-                  &lt;li&gt;Three bullets&lt;/li&gt;
-                &lt;/ul&gt;
-              </code>
-            </pre>
+            <code>
+              &lt;ul&gt;<br />
+                &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+              &lt;/ul&gt;
+            </code>
 
             <h4>Rendered element:</h4>
             <ul>
@@ -401,19 +397,19 @@
             <p>ol</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;ol&gt;
-              &lt;li&gt;One bullet&lt;/li&gt;
-              &lt;li&gt;Two bullets&lt;/li&gt;
-              &lt;li&gt;Three bullets&lt;/li&gt;
-              &lt;/ol&gt;</code>
-            </pre>
+            <code>
+              &lt;ol&gt;<br />
+                &emsp;&lt;li&gt;One bullet&lt;/li&gt;<br />
+                &emsp;&lt;li&gt;Two bullets&lt;/li&gt;<br />
+                &emsp;&lt;li&gt;Three bullets&lt;/li&gt;<br />
+              &lt;/ol&gt;
+            </code>
 
             <h4>Rendered element:</h4>
             <ol>
-            <li>One bullet</li>
-            <li>Two bullets</li>
-            <li>Three bullets</li>
+              <li>One bullet</li>
+              <li>Two bullets</li>
+              <li>Three bullets</li>
             </ol>
 
           </article>
@@ -446,16 +442,16 @@
             <p>p</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;
-
-              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;/p&gt;</code>
-            </pre>
+            <code>
+              &lt;p&gt;The Official Dodgeball Rules listed below have been constantly refined over the past 9 years to produce a style of dodgeball that is fast-paced, exciting, and fun. Feel free to use these dodgeball rules in your dodgeball activities. The Dodgeball Rules have a Creative Commons license, thus, please attribute the work properly. For the purpose of simplifying the language of the rules, all players, both male and female, will be represented with masculine pronouns.&lt;/p&gt;<br />
+              <br />
+              &lt;p&gt;Photo week is on February 3rd, so make sure your teams are all geared up with jerseys! Feel free to bring props and whatever else you need for your photos.&lt;/p&gt;
+            </code>
 
             <h4>Rendered element:</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p>The Official Dodgeball Rules listed below have been constantly refined over the past 9 years to produce a style of dodgeball that is fast-paced, exciting, and fun. Feel free to use these dodgeball rules in your dodgeball activities. The Dodgeball Rules have a Creative Commons license, thus, please attribute the work properly. For the purpose of simplifying the language of the rules, all players, both male and female, will be represented with masculine pronouns.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p>Photo week is on February 3rd, so make sure your teams are all geared up with jerseys! Feel free to bring props and whatever else you need for your photos.</p>
 
           </article>
 
@@ -473,9 +469,9 @@
             <p>iframe</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;iframe width="640" height="360" src="youtube.com/url" allowfullscreen&gt;</code>
-            </pre>
+            <code>
+              &lt;iframe width="640" height="360" src="youtube.com/url" allowfullscreen&gt;
+            </code>
 
             <h4>Rendered element:</h4>
             <div class="videoWrapper">
@@ -496,45 +492,48 @@
           <article>
 
             <h4>CSS selector:</h4>
-            <p>table, th, td</p>
+            <p>table, th, tr, td</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;table style="width:100%"&gt;
-              &lt;tr&gt;
-              &lt;th&gt;Gym&lt;/th&gt;
-              &lt;th&gt;Court A&lt;/th&gt;
-              &lt;th&gt;Court B&lt;/th&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-              &lt;td&gt;Garden City&lt;/td&gt;
-              &lt;td&gt;Team Name 1&lt;/td&gt;
-              &lt;td&gt;Team Name 2&lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-              &lt;td&gt;Blundell&lt;/td&gt;
-              &lt;td&gt;Team Name 3&lt;/td&gt;
-              &lt;td&gt;Team Name 4&lt;/td&gt;
-              &lt;/tr&gt;</code>
-            </pre>
+            <code>
+              &lt;table&gt;<br />
+                &emsp;&lt;tr&gt;<br />
+                  &emsp;&emsp;&lt;th&gt;Court A&lt;/th&gt;<br />
+                  &emsp;&emsp;&lt;th&gt;Court B&lt;/th&gt;<br />
+                &emsp;&lt;/tr&gt;<br />
+                &emsp;&lt;tr&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;The Upside Down&lt;/td&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;5 Jerks and a Seaman&lt;/td&gt;<br />
+                &emsp;&lt;/tr&gt;<br />
+                &emsp;&lt;tr&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;Eva's Emus&lt;/td&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;YAM BAM BAM&lt;/td&gt;<br />
+                &emsp;&lt;/tr&gt;<br />
+                &emsp;&lt;tr&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;No Basketball&lt;/td&gt;<br />
+                  &emsp;&emsp;&lt;td&gt;River Rats Dodgeball&lt;/td&gt;<br />
+                &emsp;&lt;/tr&gt;<br />
+              &lt;/table&gt;<br />
+            </code>
 
             <h4>Rendered element:</h4>
-            <table style="width:100%">
-            <tr>
-            <th>Gym</th>
-            <th>Court A</th>
-            <th>Court B</th>
-            </tr>
-            <tr>
-            <td>Garden City</td>
-            <td>Team Name 1</td>
-            <td>Team Name 2</td>
-            </tr>
-            <tr>
-            <td>Blundell</td>
-            <td>Team Name 3</td>
-            <td>Team Name 4</td>
-            </tr>
+            <table>
+              <tr>
+                <th>Court A</th>
+                <th>Court B</th>
+              </tr>
+              <tr>
+                <td>The Upside Down</td>
+                <td>5 Jerks and a Seaman</td>
+              </tr>
+              <tr>
+                <td>Eva's Emus</td>
+                <td>YAM BAM BAM</td>
+              </tr>
+              <tr>
+                <td>No Basketball</td>
+                <td>River Rats Dodgeball</td>
+              </tr>
             </table>
 
           </article>
@@ -545,37 +544,44 @@
         <div class="grid-col-4of8">
           <section class="sub-section" id="navbar">
 
-          <!-- Change ".button-nav" to ".nav-item" -->
-
           <h3>Main Navigation</h3>
 
           <article>
 
             <h4>CSS selector:</h4>
-            <p>.button-nav, section#navbar</p>
+            <p>.grid-col-header-title, .grid-col-header-navbar, .grid-row, #navbar, button-nav</p>
 
             <h4>Sample code:</h4>
-            <pre>
-              <code>&lt;span class="logo"&gt;
-              &lt;img src="img_styleguide/logo.jpg" alt="RDL logo"&gt;
-              &lt;/span&gt;
-              &lt;a href="#" class="button-nav">News&lt;/a&gt;
-              &lt;a href="#" class="button-nav">Registration&lt;/a&gt;
-              &lt;a href="#" class="button-nav">Season 8&lt;/a&gt;
-              &lt;a href="#" class="button-nav">League&lt;/a&gt;
-              &lt;a href="#" class="button-nav">About&lt;/a&gt;
-              </code>
-            </pre>
+            <code>
+              &lt;div class="grid-col-header-title"&gt;<br />
+                &emsp;&lt;a href="index.html"&gt;<br />
+                  &emsp;&emsp;&lt;img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo"&gt;<br />
+                &emsp;&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+              <br />
+              &lt;nav class="grid-col-header-navbar grid-row" id="navbar"&gt;<br />
+                &emsp;&lt;a href="news.html" class="button-nav"&gt;Blog&lt;/a&gt;<br />
+                &emsp;&lt;a href="registration.html" class="button-nav"&gt;Registration&lt;/a&gt;<br />
+                &emsp;&lt;a href="schedule.html" class="button-nav"&gt;Season 8&lt;/a&gt;<br />
+                &emsp;&lt;a href="rules.html" class="button-nav"&gt;Rules&lt;/a&gt;<br />
+                &emsp;&lt;a href="about.html" class="button-nav"&gt;About&lt;/a&gt;<br />
+              &lt;/nav&gt;
+            </code>
 
             <h4>Rendered element:</h4>
-            <span class="logo">
-            <img src="img_styleguide/logo.jpg" alt="RDL logo">
-            </span>
-            <a href="#" class="button-nav">News</a>
-            <a href="#" class="button-nav">Registration</a>
-            <a href="#" class="button-nav">Season 8</a>
-            <a href="#" class="button-nav">League</a>
-            <a href="#" class="button-nav">About</a>
+            <div class="grid-col-header-title">
+              <a href="index.html">
+                <img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo">
+              </a>
+            </div>
+
+            <nav class="grid-col-header-navbar grid-row" id="navbar">
+              <a href="news.html" class="button-nav">Blog</a>
+              <a href="registration.html" class="button-nav">Registration</a>
+              <a href="schedule.html" class="button-nav">Season 8</a>
+              <a href="rules.html" class="button-nav">Rules</a>
+              <a href="about.html" class="button-nav">About</a>
+            </nav>
 
           </article>
 
