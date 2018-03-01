@@ -124,93 +124,89 @@
 
           <h2>Colour Palette</h2>
 
-          <section class="colours">
+          <div class="grid-row">
 
-            <div class="grid-row">
+            <div class="grid-col-4of8">
+              <section class="colour-orange-info">
 
-              <div class="grid-col-4of8">
-                <section class="colour-orange-info">
+                <h3>Orange Swatch</h3>
 
-                  <h3>Orange Swatch</h3>
+                <div class="grid-row">
 
-                  <div class="grid-row">
-
-                    <div class="grid-col-4of8">
-                      Default State: <code>#F15F23;</code>
-                      Active, Focus, and Hover States: <code>#EF7362;</code>
-                    </div>
-                    <div class="grid-col-4of8">
-                      <div class="swatch" id="swatch-orange"></div>
-                    </div>
-
+                  <div class="grid-col-4of8">
+                    Default State: <code>#F15F23;</code>
+                    Active, Focus, and Hover States: <code>#EF7362;</code>
+                  </div>
+                  <div class="grid-col-4of8">
+                    <div class="swatch" id="swatch-orange"></div>
                   </div>
 
-                </section>
-              </div>
+                </div>
 
-              <div class="grid-col-4of8">
-                <section class="colour-blue-info">
-
-                  <h3>Blue Swatch</h3>
-
-                  <div class="grid-row">
-
-                    <div class="grid-col-4of8">
-                      Default State: <code>#008FD3;</code>
-                      Active, Focus, and Hover States: <code>#43ADE0;</code>
-                    </div>
-                    <div class="grid-col-4of8">
-                      <div class="swatch" id="swatch-blue"></div>
-                    </div>
-
-                  </div>
-
-                </section>
-              </div>
-
-              <div class="grid-col-4of8">
-                <section class="colour-black-info">
-
-                  <h3>Black Swatch</h3>
-
-                  <div class="grid-row">
-
-                    <div class="grid-col-4of8">
-                      Default State: <code>#212121;</code>
-                      Active, Focus, and Hover States: <code>#4C4C4C;</code>
-                    </div>
-                    <div class="grid-col-4of8">
-                      <div class="swatch" id="swatch-black"></div>
-                    </div>
-
-                  </div>
-
-                </section>
-              </div>
-
-              <div class="grid-col-4of8">
-                <section class="colour-white-info">
-
-                  <h3>White Swatch</h3>
-
-                  <div class="grid-row">
-
-                    <div class="grid-col-4of8">
-                      Default State: <code>#FFFFFF;</code>
-                      Active, Focus, and Hover States: <code>#E8E8E8;</code>
-                    </div>
-                    <div class="grid-col-4of8">
-                      <div class="swatch" id="swatch-white"></div>
-                    </div>
-
-                  </div>
-
-                </section>
-              </div>
-
+              </section>
             </div>
 
-          </section>
+            <div class="grid-col-4of8">
+              <section class="colour-blue-info">
+
+                <h3>Blue Swatch</h3>
+
+                <div class="grid-row">
+
+                  <div class="grid-col-4of8">
+                    Default State: <code>#008FD3;</code>
+                    Active, Focus, and Hover States: <code>#43ADE0;</code>
+                  </div>
+                  <div class="grid-col-4of8">
+                    <div class="swatch" id="swatch-blue"></div>
+                  </div>
+
+                </div>
+
+              </section>
+            </div>
+
+            <div class="grid-col-4of8">
+              <section class="colour-black-info">
+
+                <h3>Black Swatch</h3>
+
+                <div class="grid-row">
+
+                  <div class="grid-col-4of8">
+                    Default State: <code>#212121;</code>
+                    Active, Focus, and Hover States: <code>#4C4C4C;</code>
+                  </div>
+                  <div class="grid-col-4of8">
+                    <div class="swatch" id="swatch-black"></div>
+                  </div>
+
+                </div>
+
+              </section>
+            </div>
+
+            <div class="grid-col-4of8">
+              <section class="colour-white-info">
+
+                <h3>White Swatch</h3>
+
+                <div class="grid-row">
+
+                  <div class="grid-col-4of8">
+                    Default State: <code>#FFFFFF;</code>
+                    Active, Focus, and Hover States: <code>#E8E8E8;</code>
+                  </div>
+                  <div class="grid-col-4of8">
+                    <div class="swatch" id="swatch-white"></div>
+                  </div>
+
+                </div>
+
+              </section>
+            </div>
+
+          </div>
 
         </section>
 
@@ -627,7 +623,7 @@
         </div>
 
         <div class="grid-col-4of8">
-          <section class="sub-section" id="navbar">
+          <section class="sub-section" id="navbar-styleguide">
 
           <h3>Main Navigation</h3>
 
@@ -656,11 +652,11 @@
             <h4>Rendered element:</h4>
             <div class="grid-col-header-title">
               <a href="index.html">
-                <img id="logo" src="img/logo.png" alt="Richmond Dodgeball League Logo">
+                <img id="logo-initial" src="img/logo.png" alt="Richmond Dodgeball League Logo">
               </a>
             </div>
 
-            <nav class="grid-col-header-navbar grid-row" id="navbar">
+            <nav class="grid-col-header-navbar grid-row" id="navbar-initial">
               <a href="news.html" class="button-nav">Blog</a>
               <a href="registration.html" class="button-nav">Registration</a>
               <a href="schedule.html" class="button-nav">Season 8</a>
@@ -697,7 +693,7 @@
             </code>
 
             <h4>Rendered element:</h4>
-            <form method="post" action="#" id="contact">
+            <form method="post" action="#" id="contact-initial">
               <label for="form-name">Name:</label>
               <input type="text" id="form-name" placeholder="Enter your name here.">
               <label for="form-email">Your Email Address:</label>

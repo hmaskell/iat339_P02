@@ -43,7 +43,7 @@ section code {
   margin-bottom: 2rem;
 }
 
-.colours code {
+#colours code {
   padding: 0.75rem 1rem;
   margin: 0.25rem 0 1rem 0;
 }
@@ -62,7 +62,7 @@ article {
 /*
   COLOUR PALETTE ELEMENTS -------------------
 */
-.colours [class^="grid-col-"] {
+#colours .grid-row [class^="grid-col-"] {
 	padding: 0 0.5rem;
   margin-bottom: 1rem;
 }
@@ -146,17 +146,6 @@ article {
   text-align: center;
   display: block;
   margin-top: .3rem;
-}
-
-.colours li {
-  list-style: none;
-  float:left;
-  margin: 1rem;
-  border: .1rem solid #000000;
-  padding: .5rem;
-  background: #FFFFFF;
-  border-radius: .5rem;
-  display: block;
 }
 
 /*
