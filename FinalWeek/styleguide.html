@@ -229,18 +229,26 @@
 
           <!-- Change ".button-sub" to ".button" -->
 
-          <h3>Submit Button</h3>
+          <h3>Submit and Reset Buttons</h3>
 
           <article>
 
             <h4>CSS selector:</h4>
-            <p>.button-nav</p>
+            <p>form, .button, button</p>
 
             <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button-sub"&gt;SUBMIT&lt;/a&gt;</code>
+            <code>
+              &lt;form method="post" action="#" id="contact"&gt;<br />
+                &lt;input type="submit" class="button" value="Submit"&gt;<br />
+                &lt;button class="button"&gt;Reset&lt;/button&gt;<br />
+              &lt;/form&gt;
+            </code>
 
             <h4>Rendered element:</h4>
-            <a class="button-sub" href="#">SUBMIT</a>
+            <form method="post" action="#" id="contact">
+              <input type="submit" class="button" value="Submit">
+              <button class="button">Reset</button>
+            </form>
 
           </article>
 
@@ -261,7 +269,10 @@
             <code>&lt;input type='text' id='form-search'/&gt;</code>
 
             <h4>Rendered element:</h4>
-            <input type='text' id='form-search'/>
+            <form method="post" action="#" id="contact">
+              <label for="form-search">Search:</label>
+              <input type="text" id="form-search" placeholder="Search the RDL website">
+            </form>
 
           </article>
 
