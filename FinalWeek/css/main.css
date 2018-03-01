@@ -263,6 +263,7 @@ a:active, a:hover, a:focus{
   color: white!important;
   font-family: 'Quicksand', Helvetica, sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5rem 0.6rem;
@@ -285,15 +286,7 @@ a:active, a:hover, a:focus{
   Got help from this website to learn about form formatting: https://www.w3schools.com/css/css_form.asp
 */
 
-#search {
-    max-height: 30px;
-    position: absolute;
-    right: 12px;
-    top: 35px;
-    transition: 0.4s;
-}
-
-input {
+form input {
   color: black;
   background-color: #008FD3;
 
@@ -309,23 +302,55 @@ input {
   transition: background-color 0.4s ease-out;
 }
 
-input[type=text], textarea {
-    width: 7rem;
+form input[type=text]{
+    width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    font-size: 12px;
-    background-color: white;
-    transition: max-width 0.4s ease-out;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    transition: background-color 0.4s ease-out;
 }
 
-input[type=text]::placeholder {
+form input[type=text]:active,
+form input[type=text]:hover,
+form input[type=text]:focus {
+    background-color: white;
+    transition: background-color 0.4s ease-out;
+}
+
+form input[type=text]::placeholder {
   color: #212121;
 }
 
-textarea {
+form textarea { /* Got help from https://www.w3schools.com/Css/css_form.asp */
+  display: block;
   width: 100%;
   height: 6rem;
+  padding: 0.4rem 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  transition: background-color 0.4s ease-out;
+  resize: none;
+}
+
+form textarea:active,
+form textarea:hover,
+form textarea:focus {
+    background-color: white;
+    transition: background-color 0.4s ease-out;
+}
+
+form textarea::placeholder {
+  color: #212121;
 }
 
 .icon{
@@ -341,18 +366,20 @@ textarea {
   color: #F15F23;
 }
 
+#search {
+    /* max-height: 10px; */
+    position: absolute;
+    right: 0.5rem;
+    top: 2rem;
+    transition: 0.4s;
+}
+
+#search input {
+  width: 80%;
+}
+
 #contact {
   margin-bottom: 3rem;
-}
-
-#contact input[type=submit] {
-  display: block;
-  font-weight: bold;
-}
-
-#contact input[type=text], textarea{
-  margin-bottom: .5rem;
-  width: 100%;
 }
 
 /* NAVIGATION */
