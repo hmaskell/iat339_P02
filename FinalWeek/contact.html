@@ -7,7 +7,7 @@
   Priscilla Skylar Lee
   Heather Maskell
 
-  index.html
+  contact.html
 
   Main reference is from HTML & CSS: Design and Build Websites by Jon Duckett
   Other references will be noted at appropriate sections of this file.
@@ -23,7 +23,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RDL - Contact Us</title>
+    <title>RDL - Contact</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -43,7 +43,7 @@
 
     <!-- HEADER AND NAVIGATION SECTION -->
 
-    <section id="header" class="grid-row">
+    <header class="grid-row">
 
       <div class="grid-col-header-title">
         <a href="index.html">
@@ -74,12 +74,11 @@
           </a>
 
           <div class="dropdown">
-            <button class="dropbtn">
-              <a href="schedule.html" class="button-nav">
-                Season 8
-              </a>
-              <i class="fa fa-caret-down"></i>
-            </button>
+            <form action="schedule.html" method="get">
+              <button class="button-nav dropbtn">Season 8
+                <i class="fa fa-caret-down"></i></button>
+            </form>
+
             <div class="dropdown-content">
                 <a href="standings.html" class="button-nav">
                   Standings
@@ -92,12 +91,11 @@
           </a>
 
           <div class="dropdown">
-            <button class="dropbtn">
-              <a href="about.html" class="button-nav">
-                About
-              </a>
-              <i class="fa fa-caret-down"></i>
-            </button>
+            <form action="about.html" method="get">
+              <button class="button-nav dropbtn">About
+                <i class="fa fa-caret-down"></i></button>
+            </form>
+
             <div class="dropdown-content">
                 <a href="executives.html" class="button-nav">
                   Executives
@@ -113,47 +111,53 @@
 
           <div class="grid-col-header-navbar grid-row" id="menuToggle">
             <input type="checkbox" />
-            <ul id="menu">
+            <div id="menu">
               <div class="mobile-nav-section" id="mobile-nav-top">
-                <a class="parent-nav" href="index.html"><li>Home</li></a>
+                <a class="parent-nav" href="index.html">Home</a>
               </div>
               <div class="mobile-nav-section">
-                <a class="parent-nav" href="news.html"><li>Blog</li></a>
+                <a class="parent-nav" href="news.html">Blog</a>
               </div>
               <div class="mobile-nav-section">
-                <a class="parent-nav" href="registration.html"><li>Registration</li></a>
+                <a class="parent-nav" href="registration.html">Registration</a>
               </div>
               <div class="mobile-nav-section">
-                <a class="parent-nav" href="schedule.html"><li>Season 8</li></a>
-                <a class="child-nav" href="standings.html"><li>Standings</li></a>
+                <a class="parent-nav" href="schedule.html">Season 8</a>
               </div>
               <div class="mobile-nav-section">
-                <a class="parent-nav" href="rules.html"><li>Rules</li></a>
+                <a class="child-nav" href="standings.html">Standings</a>
               </div>
               <div class="mobile-nav-section">
-                <a class="parent-nav" href="about.html"><li>About</li></a>
-                <a class="child-nav" href="executives.html"><li>Executives</li></a>
-                <a class="child-nav" href="contact.html"><li>Contact Us</li></a>
+                <a class="parent-nav" href="rules.html">Rules</a>
               </div>
-            </ul>
+              <div class="mobile-nav-section">
+                <a class="parent-nav" href="about.html">About</a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="child-nav" href="executives.html">Executives</a>
+              </div>
+              <div class="mobile-nav-section">
+                <a class="child-nav" href="contact.html">Contact Us</a>
+              </div>
+            </div>
           </div>
 
 
       </nav>
 
-    </section>
+    </header>
 
     <!-- FIRST BODY DIVISION -->
 
     <div class="grid-row">
 
       <h2>Contact Us</h2>
-      <div id="contact" class="grid-col-4of8">
+      <div class="grid-col-4of8 contact">
         <form method="post" action="#" id="contact">
           <label for="form-name">Name:</label>
-          <input type="text" id="form-name" placeholder="Enter your name here.">
+          <label><input type="text" id="form-name" role="combobox" aria-expanded="true" placeholder="Enter your name here."></label>
           <label for="form-email">Your Email Address:</label>
-          <input type="text" id="form-email" placeholder="Enter your email address here.">
+          <label><input type="text" id="form-email" role="combobox" aria-expanded="true" placeholder="Enter your email address here."></label>
           <label for="form-message">Your Message:</label>
           <textarea id="form-message" placeholder="Please place your message here."></textarea>
           <input type="submit" class="button" value="Send Message">
@@ -173,21 +177,21 @@
 
             <!-- REFERENCE: FACEBOOK ICON FROM
             https://iconmonstr.com/facebook-4-svg/ -->
-            <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank" alt="Like us on Facebook">
-              <img class="socialmedia-icon" id="fb" src="img/social_media/facebook2.png">
+            <a class="socialmedia-links" href="https://www.facebook.com/RDLDodgeball" target="_blank">
+              <img class="socialmedia-icon" id="fb" src="img/social_media/facebook2.png" alt="Like us on Facebook">
             </a>
 
           <!-- REFERENCE: TWITTER ICON FROM
           https://iconmonstr.com/twitter-4-svg/ -->
-          <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank" alt="Follow us on Twitter">
-            <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter2.png">
+          <a class="socialmedia-links" href="https://twitter.com/rdldodgeball/" target="_blank">
+            <img class="socialmedia-icon" id="twitter" src="img/social_media/twitter2.png" alt="Follow us on Twitter">
           </a>
 
           <!-- REFERENCE: Instagram ICON FROM
           https://iconmonstr.com/instagram-4-svg/ -->
-          <a class="socialmedia-links" href="https://www.instagram.com/rdldodgeball/" target="_blank" alt="Follow us on Instagram">
+          <a class="socialmedia-links" href="https://www.instagram.com/rdldodgeball/" target="_blank">
             <img class="socialmedia-icon" id="ig"
-            src="img/social_media/instagram.png">
+            src="img/social_media/instagram.png" alt="Follow us on Instagram">
           </a>
 
       </div>
