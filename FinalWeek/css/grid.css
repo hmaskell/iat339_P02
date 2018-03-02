@@ -75,6 +75,17 @@ section {
 	vertical-align: middle;
 }
 
+@media (max-width: 800px){
+  #quick-contact p{
+    max-width: 60%;
+  }
+
+	#quick-contact .button{
+		display: block;
+	}
+
+}
+
 
 /* COLUMN WIDTHS - DIVISIONS OF 8 */
 
