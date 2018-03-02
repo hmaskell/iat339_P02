@@ -271,26 +271,27 @@ input[type=checkbox] {
 
   #menu .parent-nav {
       font-size: .9rem;
-
   }
 
   #menu .child-nav{
     font-size: .8rem;
     font-weight: 100;
     position: relative;
-    left: 10px;
+    padding-left: 1rem;
   }
 
   .mobile-nav-section{
     border-width: 0 0 0.5px 0;
     border-style: solid;
     border-color: #d6d6d6;
+    padding: .4rem 0 .4rem 1rem;
   }
 
   #mobile-nav-top{
     border-width: 0.5px 0 0.5px 0;
     border-style: solid;
     border-color: #d6d6d6;
+    padding: .4rem 0 .4rem 1rem;
   }
 
   #contact input[type=text], textarea{
