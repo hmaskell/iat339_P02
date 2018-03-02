@@ -188,20 +188,17 @@ input[type=checkbox] {
 
   /* Rotate first bar */
   .change #ham-1 {
-      -webkit-transform: rotate(-45deg) translate(-4px, 5px);
       transform: rotate(-45deg) translate(-4px, 5px);
   }
 
   /* Fade out the second bar */
   .change #ham-2 {
-      -webkit-transform: translate(30px, 0px) scale(0.2, 1.4);
-      transform: ttranslate(30px, 0px) scale(0.2, 1.4);
+      transform: translate(30px, 0px) scale(0.2, 1.4);
       opacity: 0;
   }
 
   /* Rotate last bar */
   .change #ham-3 {
-      -webkit-transform: rotate(45deg) translate(-5px, -6px);
       transform: rotate(45deg) translate(-5px, -6px);
   }
 
