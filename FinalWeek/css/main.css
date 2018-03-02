@@ -276,7 +276,7 @@ a:active, a:hover, a:focus{
 }
 
 .button {
-  display: block;
+  display: inline-block;
   background-color: #008FD3;
   color: white!important;
   font-family: 'Quicksand', Helvetica, sans-serif;
@@ -296,6 +296,7 @@ a:active, a:hover, a:focus{
 }
 
 #quick-contact .button{
+  display: block;
   margin: 1rem 0;
 }
 
