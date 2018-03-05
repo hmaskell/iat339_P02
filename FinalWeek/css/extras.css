@@ -306,6 +306,19 @@ input[type=checkbox] {
       max-width: 8rem;
     }
 
+    .icon{
+      top: 8px;
+      transition: 0.4s;
+    }
+
+    #hamburger{
+      top: 20px;
+    }
+
+    #search input[type=text] {
+      display: none;
+    }
+
     #events-and-scheduling{
       padding-left: 0;
     }
@@ -316,13 +329,7 @@ input[type=checkbox] {
 }
 
 @media (max-width: 340px) {
-    #search{
-      top: 50px;
-    }
 
-    #hamburger{
-      top: 50px;
-    }
 
     #events-and-scheduling{
       padding-left: 0;
@@ -332,3 +339,16 @@ input[type=checkbox] {
       margin-top: 1rem;
     }
 }
+
+@media (max-width: 250px) {
+
+      #hamburger{
+        top: 50px;
+      }
+      
+      .icon{
+        top: 38px;
+      }
+}
+
+
