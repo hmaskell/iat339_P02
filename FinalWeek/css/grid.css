@@ -277,4 +277,14 @@ section {
 		flex-basis: 50%;
 	}
 
+	#logo {
+		content: url("http://www.sfu.ca/~jafernan/iat339project2/img/logo2.png");
+	}
+
+}
+
+@media (min-width: 45rem) {
+	#logo {
+		content: url("http://www.sfu.ca/~jafernan/iat339project2/img/logo.png");
+	}
 }
