@@ -240,6 +240,10 @@ section {
 		padding: 0;
 	}
 
+	#socialmedia, #footer-text {
+		text-align: center;
+	}
+
 }
 
 @media (max-width: 64rem) {

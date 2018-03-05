@@ -115,6 +115,12 @@ h4 {
   font-size: .8rem;
 }
 
+#socialmedia, #footer-text {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
 #copyright p{
   font-size: 0.75rem;
   margin: 1rem;
