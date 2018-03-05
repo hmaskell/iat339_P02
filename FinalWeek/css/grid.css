@@ -244,6 +244,10 @@ section {
 		text-align: center;
 	}
 
+	#footer p {
+	  max-width: none;
+	}
+
 }
 
 @media (max-width: 64rem) {
@@ -281,12 +285,14 @@ section {
 		flex-basis: 50%;
 	}
 
+	/* Got help for changing image: https://stackoverflow.com/questions/17705768/is-it-possible-to-change-img-src-attribute-using-css */
 	#logo {
 		content: url("http://www.sfu.ca/~jafernan/iat339project2/img/logo2.png");
 	}
 
 }
 
+/* Got help for changing image: https://stackoverflow.com/questions/17705768/is-it-possible-to-change-img-src-attribute-using-css */
 @media (min-width: 45rem) {
 	#logo {
 		content: url("http://www.sfu.ca/~jafernan/iat339project2/img/logo.png");
