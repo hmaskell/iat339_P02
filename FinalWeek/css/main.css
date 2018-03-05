@@ -425,3 +425,9 @@ form textarea::placeholder {
 .nav2-item a:active{
   background-color: black;
 }
+
+/* OTHERS */
+
+#valerie-siu, #jonathan-chu-chong, #warren-mui {
+  margin-bottom: 2rem;
+}
